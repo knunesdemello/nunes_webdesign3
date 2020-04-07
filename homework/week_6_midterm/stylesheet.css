@@ -1,0 +1,66 @@
+
+.navbar-brand{
+    font-family:'Monoton', cursive;
+    font-size:36px;
+    text-shadow: 3px 3px slateblue;
+}
+body{
+    background-color:black;
+}
+
+.jumbotron{
+    background-size: cover;
+    height: 827px;
+    background-position: center;
+}
+
+p{
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-family: 'Comfortaa', cursive;
+}
+h2 {
+    text-shadow: 2px 2px slateblue;
+    font-family: 'Comfortaa', cursive;
+  }
+
+  .gallery {
+    -webkit-column-count: 3;
+    -moz-column-count: 3;
+    column-count: 3;
+    -webkit-column-width: 33%;
+    -moz-column-width: 33%;
+    column-width: 33%; }
+    .gallery .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease; }
+    .gallery .animation {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1); }
+    
+    @media (max-width: 450px) {
+    .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+    }
+    }
+    
+    @media (max-width: 400px) {
+    .btn.filter {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+    }
+    }
+
+    
+      
+      
+  
+  
