@@ -1,11 +1,12 @@
 
 .navbar-brand{
     font-family:'Monoton', cursive;
-    font-size:36px;
+    font-size:34px;
     text-shadow: 3px 3px slateblue;
 }
 body{
     background-color:black;
+    position: relative;
 }
 
 .jumbotron{
@@ -26,6 +27,17 @@ h2 {
     font-family: 'Comfortaa', cursive;
   }
 
+th{
+    font-size: 26px;
+}
+td{
+    font-size: 18px;
+}
+
+hr.solid {
+    border-top: 2px solid black;
+  }
+
   .gallery {
     -webkit-column-count: 3;
     -moz-column-count: 3;
@@ -33,13 +45,7 @@ h2 {
     -webkit-column-width: 33%;
     -moz-column-width: 33%;
     column-width: 33%; }
-    .gallery .pics {
-    -webkit-transition: all 350ms ease;
-    transition: all 350ms ease; }
-    .gallery .animation {
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1); }
+
     
     @media (max-width: 450px) {
     .gallery {

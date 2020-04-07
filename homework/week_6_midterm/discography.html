@@ -16,27 +16,27 @@
 
     <title>Discography Page</title>
   </head>
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+  <body>
     <header>
-      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark py-4">
-        <a class="navbar-brand ml-3 pr-4" href="#">Intake Semantics</a>
+      <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark p-4 ">
+        <a id="navbar-scroll" class="navbar-brand " href="#">Intake Semantics</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse ml-3" id="navbarCollapse">
+        <div class="collapse navbar-collapse ml-2" id="navbarCollapse">
           <ul class="navbar-nav mr-auto">
             <li class="nav-item active">
-              <a class="nav-link" href="discography.html">Discography <span class="sr-only">(current)</span></a>
+              <a class="nav-link" href="#discography">Discography <span class="sr-only">(current)</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="tour.html">Tour</a>
-            </li>
+              <a class="nav-link" href="#tour">Tour</a>
             <li class="nav-item">
-              <a class="nav-link" href="store.html">Store</a>
+              <a class="nav-link" href="#team">Team</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="team.html">Team</a>
-            </li>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="store.html">Store</a>
+        </li>
             </ul>
 
             <ul class="navbar-nav ml-mdauto d-sm-none d-md-none d-lg-flex">
@@ -53,21 +53,22 @@
     </header>
 
     <main>
+        <div data-spy="scroll" data-target="#navbar-scroll" data-offset="0">
       <!-- Jumbotron -->
       <div class="jumbotron jumbotron-fluid mt-5" style="background-image: url(/Users/karinanunesdemello/Documents/GitHub/nunes_webdesign3/homework/week_6_midterm/img/jumbotron.jpg)">
         <div class="container mt-5 ml-4">
-          <h1 class="display-4 text-light"> <span class="font-weight-light" style="color: mediumaquamarine;">New Album:</span> 
+          <h1 class="display-4 text-light ml-3"> <span class="font-weight-light" style="color: mediumaquamarine;">New Album:</span> 
             <span class="text-light">City Sounds</span>
             <span class="text-muted">Out Now.</span>
           </h1>
-          <p class="lead text-light">2020 Tour dates will be announced on April 2nd. </p>
+          <p class="lead text-light ml-3">2020 Tour dates will be announced on April 2nd. </p>
         </div>
       </div>
       <!-- END Jumbotron -->
 
 
       <!-- Past Shows-->
-        <h2 class="text-center text-light pt-5 mt-5 pb-5 bg-dark">Past Shows</h1>
+        <h2 class="text-center text-light pt-5 mt-5 pb-5">Past Shows</h1>
 
       <!-- Start Carousel -->
 
@@ -112,72 +113,76 @@
 
 
       <!-- Tour Dates-->
-        <h2 class="text-center text-light pt-5 mt-5 pb-5 bg-dark">Tour Dates</h1>
-    </main>
+        <h2 class="text-center text-light pt-5 mt-5 pb-5">Tour Dates</h1>
 
     <!-- Start Table -->
-    <div class="container-fluid">
-    <table class="table table-light">
+    
+    <table id="tour" class="table table-dark">
   <thead>
     <tr>
       <th scope="col"></th>
-      <th scope="col">First</th>
-      <th scope="col">Last</th>
-      <th scope="col">Handle</th>
+      <th scope="col">Date</th>
+      <th scope="col">City</th>
+      <th scope="col">Venue</th>
     </tr>
   </thead>
   <tbody>
     <tr>
       <th scope="row"></th>
-      <td>Mark</td>
+      <td>SEP 2</td>
       <td>Otto</td>
       <td>@mdo</td>
     </tr>
     <tr>
       <th scope="row"></th>
-      <td>Jacob</td>
+      <td>SEP 6</td>
       <td>Thornton</td>
       <td>@fat</td>
     </tr>
     <tr>
       <th scope="row"></th>
-      <td>Larry</td>
+      <td>SEP 28</td>
       <td>the Bird</td>
       <td>@twitter</td>
     </tr>
     <tr>
         <th scope="row"></th>
-        <td>Mark</td>
+        <td>OCT 2</td>
         <td>Otto</td>
         <td>@mdo</td>
       </tr>
+
       <tr>
         <th scope="row"></th>
-        <td>Jacob</td>
+        <td>OCT 14</td>
         <td>Thornton</td>
         <td>@fat</td>
       </tr>
+
       <tr>
         <th scope="row"></th>
-        <td>Larry</td>
+        <td>OCT 15</td>
         <td>the Bird</td>
         <td>@twitter</td>
       </tr>
+
       <tr>
         <th scope="row"></th>
-        <td>Mark</td>
+        <td>OCT 16</td>
         <td>Otto</td>
         <td>@mdo</td>
       </tr>
+
       <tr>
         <th scope="row"></th>
-        <td>Jacob</td>
+        <td>OCT 30</td>
         <td>Thornton</td>
         <td>@fat</td>
       </tr>
+
       <tr>
         <th scope="row"></th>
-        <td>Larry</td>
+        <td>NOV 2</td>
         <td>the Bird</td>
         <td>@twitter</td>
       </tr>
@@ -198,7 +203,7 @@
       </main>
 
 <!-- START THE FEATURETTES -->
-<div class="container">
+<div id="team" class="container">
     <hr class="featurette-divider">
 
     <div class="row featurette">
@@ -303,6 +308,8 @@
   <!-- Grid row -->
   
   <!-- END GALLERY-->
+</div>
+</main>
 
     <footer class="fixed-bottom"></footer>
 
