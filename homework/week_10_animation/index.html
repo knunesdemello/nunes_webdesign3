@@ -1,0 +1,147 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+
+    <style>
+        body {
+            background-color: black;
+            Width: 100%;
+            height: auto;
+            animation: colorchange -webkit-animation: colorchange 50s;
+        }
+
+        @keyframes colorchange {
+            0% {
+                background: lightseagreen;
+            }
+
+            25% {
+                background: lightcyan;
+            }
+
+            50% {
+                background: pink;
+            }
+
+            75% {
+                background: palevioletred;
+            }
+
+            100% {
+                background: peru;
+            }
+        }
+
+        .container {
+            margin-top: 200px;
+            margin-left: 40%;
+            width: 100%;
+            height: 100%;
+        }
+
+        #solid {
+            position: absolute;
+            margin-top: 100px;
+        }
+
+        #outline {
+            position: absolute;
+            margin-top: 110px;
+            margin-left: 10px;
+            transition-property: transform;
+
+        }
+
+        #outline:hover {
+            transform: scale(1.1);
+        }
+
+        .container span {
+            position: absolute;
+            top: -120px;
+            left: -40px;
+            width: 500px;
+            height: 500px;
+            display: block;
+            box-sizing: border-box;
+
+        }
+
+        .container span:nth-child(1) {
+            transform: rotate(0deg);
+        }
+
+        .container span:nth-child(2) {
+            transform: rotate(90deg);
+        }
+
+        .container span:nth-child(3) {
+            transform: rotate(180deg);
+        }
+
+        .container span:nth-child(4) {
+            transform: rotate(270deg);
+        }
+
+        .container span:before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background: #50dfdb;
+            animation: animate 4s linear infinite;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: scaleX(0);
+                transform-origin: left;
+            }
+
+            50% {
+                transform: scaleX(1);
+                transform-origin: left;
+            }
+
+            50.1% {
+                transform: scaleX(1);
+                transform-origin: right;
+
+            }
+
+            100% {
+                transform: scaleX(0);
+                transform-origin: right;
+
+            }
+    </style>
+    <script>
+
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <div id="solid">
+            <img src="/Users/karinanunesdemello/Documents/GitHub/nunes_webdesign3/homework/week_10_animation/assets/km_solid.png"
+                alt="km solid" style="width:400px;height:200px;">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div id="outline">
+            <img src="/Users/karinanunesdemello/Documents/GitHub/nunes_webdesign3/homework/week_10_animation/assets/km_outline.png"
+                alt="km outline" style="width:400px;height:200px;">
+        </div>
+    </div>
+</body>
