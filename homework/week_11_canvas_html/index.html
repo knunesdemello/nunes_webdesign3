@@ -1,0 +1,102 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+
+        body{
+            background-color: #D9FFEC;
+        }
+        canvas{
+            margin-top: 10%;
+            margin-left:25%;
+            background-image: url(/Users/karinanunesdemello/Documents/GitHub/nunes_webdesign3/homework/week_11_canvas_html/assets/editorial-illustration-by-spiros-halaris-3.jpg);
+            background-size: cover;
+            border-radius: 12%;
+            position: relative;
+        }
+    
+        .banner {
+        font-size: 30px;
+        margin-top: 1%;
+        margin-left: 25%;
+        text-align: center;
+        color: #fff;
+        background: #D199BC;
+        line-height: 29px;
+        position: relative;
+        left: 0;
+        top: 0;
+        right: 0;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        height: 80px;
+        width: 800px;
+        border-radius: 80px;
+        opacity: .4;
+        display: flex;
+        transition: .5s
+    }
+
+    .banner:hover {
+        opacity: 1
+    }
+
+    div#selector>div {
+        flex-basis: 30%
+    }
+
+.Score{
+margin-top: 26px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+    }
+
+
+
+button {
+  font-size: 30px;
+  color: white;
+  background-color: #D199BC;
+  padding: 5px 20px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  border: none;
+  border-radius: 20px;
+}
+
+button:hover{
+    color: powderblue;
+}
+button:active {
+  background-color: yellow;
+}
+    </style>
+</head>
+<body onload="draw();">
+    <main>
+
+        </div>
+    <canvas width="800" height="600" id="myCanvas">
+        Please use a better browser! :) (that supports HTML Canvas)
+    </canvas>
+
+    <div class="banner" id="selector">
+        <div class="Score">
+            SCORE:<span id="score">0</span>
+        </div>
+        <button id="colorButton">Change Color</button>
+        <button id="sizeButton">Change Size</button>
+    </div>
+
+    <script src="canvas.js"></script>
+</body>
+</html>
+
