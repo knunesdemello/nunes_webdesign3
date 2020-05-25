@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <title>Multimedia and Embeds</title>
+    <style>
+      video{
+        background-color: black;
+      }
+    </style>
+  </head>
+  <body>
+      <main class="container">
+          <div class="row">
+              <div class="col-12">
+                <h1>Responsive Video</h1>
+                <div class="embed-responsive embed-responsive-16by9">
+                <video class="embed-responsive-item" controls loop poster="https://upload.wikimedia.org/wikipedia/commons/thumb/2/24/LEGO_logo.svg/1200px-LEGO_logo.svg.png">
+                    <source src="media/small.webm" type="video/webm">
+                    <source src="media/small.mp4" type="video/mp4">
+                    <source src="media/small.ogv" type="video/ogv">
+                </video>
+              </div>
+              </div>
+          </div>
+          <hr>
+          <div class="row">
+            <div class="col-12">
+              <h1>Audio</h1>
+              <audio controls class="w-100">
+                <source src="media/sample.ogg" type="audio/ogg">
+                <source src="media/sample.wav" type="audio/wav">
+                <source src="media/sample.mp3" type="audio/mpeg">
+              </audio>
+            </div>
+          </div>
+
+          <hr>
+          <div class="row">
+            <div class="col-12">
+              <h1>Embed ex. Youtube Video</h1>
+              <div class="embed-responsive embed-responsive-16by9">
+                <iframe src="https://www.youtube.com/embed/0N3MLedxwNU" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen class="embed-responsive-item"></iframe>
+              </div>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row">
+            <div class="col-12">
+              <h1>Embed Map</h1>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13226.311432602535!2d-118.52142775000002!3d34.02904525!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2a49802ae293b%3A0x56ce5670a3759a1e!2sSanta%20Monica%20Stairs!5e0!3m2!1sen!2sus!4v1590441979328!5m2!1sen!2sus" width="100%" height="600" frameborder="0" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row">
+            <div class="col-12">
+              <h1>Object- PDF embed</h1>
+              <object data="media/the-basics-of-ux-design.pdf" type="application/pdf" width="100%" height="600">
+                <a href="media/the-basics-of-ux-design.pdf">Download File</a>
+              </object>
+            </div>
+          </div>
+          <hr>
+
+          <div class="row">
+            <div class="col-12">
+              <h1>Embed- PDF embed</h1>
+              <embed src="media/the-basics-of-ux-design.pdf" width="100%" height="600">
+            </div>
+          </div>
+          
+      </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+  </body>
+</html>
