@@ -4,7 +4,7 @@ var canvas = document.getElementById("myCanvas");
     var ballColor = 'rgb(255, 255, 0)';
     var ballPosX = canvas.width/2;
     var ballPosY = canvas.height/2;
-    var ballRadius = 50;
+    var ballRadius = 60;
 
     var ballSpeedX = 4;
     var ballSpeedY = 2;
@@ -68,9 +68,12 @@ canvas.addEventListener("click", function (event) {
 }
 
 sizeButton.addEventListener("click", function changesize(event) {
-        var el = document.getElementById("output");
-        el.style.height = "200px";
-        el.style.width = "200px";
+            if (ballRadius <= 10){
+                ballRadius = 60
+            }else{
+           ballRadius -= 10; 
+            } 
+        
 
   });
  
