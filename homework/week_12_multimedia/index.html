@@ -1,22 +1,247 @@
 <!doctype html>
 <html lang="en">
-  <head>
+
+<head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
     <title>Media Embeds Homework</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+
+    <style>
+        .blog-header-logo {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 40px;
+        }
+
+        button {
+            font-size: 20px;
+            padding: 5px 20px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            border: none;
+        }
+
+        button:hover {
+            color: powderblue;
+        }
+
+        h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align-last: center;
+        }
+
+        .jumbotron {
+            background-size: cover;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+        }
+
+        #actionCall {
+            font-size: 40px;
+            margin-top: 40px;
+            margin-bottom: 90px;
+            border-radius: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <main class="container">
+        <header>
+            <header class="blog-header py-3">
+                <div class="row flex-nowrap justify-content-between align-items-center">
+                    <div class="col-4 pt-1">
+                    </div>
+                    <div class="col-4 text-center">
+                        <a class="blog-header-logo text-dark" href="#">Wander</a>
+                    </div>
+                    <div class="col-4 d-flex justify-content-end align-items-center">
+                        <a class="text-muted" href="#" aria-label="Search">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none"
+                                stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                class="mx-3" role="img" viewBox="0 0 24 24" focusable="false">
+                                <title>Search</title>
+                                <circle cx="10.5" cy="10.5" r="7.5" />
+                                <path d="M21 21l-5.2-5.2" />
+                            </svg>
+                        </a>
+                        <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
+                    </div>
+                </div>
+            </header>
+
+            <div class="nav-scroller py-1 mb-2">
+                <nav class="nav d-flex justify-content-between">
+                    <a class="p-2 text-muted" href="#">Events</a>
+                    <a class="p-2 text-muted" href="#">Travel</a>
+                    <a class="p-2 text-muted" href="#">Local Guide</a>
+                    <a class="p-2 text-muted" href="#">Hiking Trails</a>
+                    <a class="p-2 text-muted" href="#">Safety</a>
+                    <a class="p-2 text-muted" href="#">Survival Courses</a>
+                    <a class="p-2 text-muted" href="#">Gear Guides</a>
+                </nav>
+            </div>
+        </header>
+
+
+        <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark"
+            style="background-image:url(/Users/karinanunesdemello/Documents/GitHub/nunes_webdesign3/homework/week_12_multimedia/media/christian-vasile-RuyDru8EFgQ-unsplash.jpg)">
+            <div class="col-md-10 px-0">
+                <h1 class="display-4 font-italic">The Quarantine is finally over!<h1 class="display-4 font-italic">Time
+                        to go back to Yosemite.</h1>
+                </h1>
+                <p class="lead my-3">Join us for an exhilirating hike through one of the most breath-taking,
+                    picture-worthy trails in the US.</p>
+                <div class="lead mb-0"><button id="colorButton" type="button" class="btn btn-light">Heck yeah!</button>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="row">
+            <div class="col-12 col-md-6">
+                <h1>The Four Mile Trail</h1>
+                <p>The Four Mile Trail switchbacks 3200 feet down from Glacier Point to Yosemite Valley, providing
+                    wonderful views of the valley. See Half Dome, North Dome, El Capitan, Cathedral Rocks, the Royal
+                    Arches, and full views of Yosemite Falls. From the top, the trail is fairly flat for the first mile,
+                    then hits relentless switchbacks at the reverse Tunnel View and then along cliffside views to Union
+                    Point at the 1.8 mile mark, that then take you into the trees and down to the valley floor near the
+                    Swinging Bridge.
+
+                    Views are more spectacular closer to the top of the trail such that if you don't want to go the
+                    whole trail in both directions and have transportation (bus or private car) to or from the top, you
+                    can hike a partial way down from the top to the switchbacks and the reverse Tunnel View, taking in
+                    the best views.
+
+                    The end of the trail puts you at the visitor center at Glacier point. The trip down, while not as
+                    strenuous as the trip up, requires your attention due to the decomposed granite. The trail can be
+                    very slippery.
+
+                    [Note/Winter Road Closures: The Glacier Point Road closes due to snow, usually from sometime in
+                    November through late May or early June. From approximately mid December through March, the first
+                    five miles of this road are open to Yosemite Ski & Snowboard Area (formerly Badger Pass Ski Area).
+                    It is not possible to drive to Glacier Point when the Glacier Point Road is closed.
+
+                    The Tioga Road closes due to snow, usually from sometime in November through late May or early June.
+                    The road closure extends from the Tuolumne Grove, just east of Crane Flat, to Tioga Pass Entrance
+                    Station. (Highway 120, the continuation of the Tioga Road outside the park, is often closed in
+                    winter from Tioga Pass to five miles west of Lee Vining.)
+
+                    When the Tioga Road is closed, it is not possible to drive to Tuolumne Meadows or enter Yosemite
+                    National Park from the east. All other park entrances, including those along Highway 120 from the
+                    west, Hetch Hetchy, Highway 140, and Highway 41, remain open all year.</p>
+            </div>
+            <div class="col-md-8">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13567.828028573253!2d-119.58211351722443!3d37.73246079978722!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8096f213055d7b0d%3A0x7402b7aa2a41426a!2sFour%20Mile%20Trail%2C%20California!5e0!3m2!1sen!2sus!4v1590446046647!5m2!1sen!2sus"
+                    width="100%" height="700" frameborder="0" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
+            </div>
+        </div>
+
+        <hr>
+        <div class="row">
+            <div class="col-12">
+                <h2>Take a look at this in-depth review about the trail:</h2>
+                <hr>
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/O-bFHnNwjlo" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
+                        class="embed-responsive-item"></iframe>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <hr>
+        <div class="container">
+            <h2>Get inspired with our Yosemite Playlist:</h2>
+            <hr>
+            <div class="row flex-nowrap">
+                <div class="col-12 col-md-4">
+                    <audio controls class="w-100">
+                        <source src="media/bonobo_migration.ogg" type="audio/ogg">
+                        <source src="media/bonobo_migration.wav" type="audio/wav">
+                        <source src="media/bonobo_migration" type="audio/mpeg">
+                    </audio>
+                    <hr>
+                    <audio controls class="w-100">
+                        <source src="media/bonobo_migration.ogg" type="audio/ogg">
+                        <source src="media/bonobo_migration.wav" type="audio/wav">
+                        <source src="media/bonobo_migration" type="audio/mpeg">
+                    </audio>
+                    <hr>
+                    <audio controls class="w-100">
+                        <source src="media/bonobo_migration.ogg" type="audio/ogg">
+                        <source src="media/bonobo_migration.wav" type="audio/wav">
+                        <source src="media/bonobo_migration" type="audio/mpeg">
+                    </audio>
+                    <hr>
+                    <audio controls class="w-100">
+                        <source src="media/bonobo_migration.ogg" type="audio/ogg">
+                        <source src="media/bonobo_migration.wav" type="audio/wav">
+                        <source src="media/bonobo_migration" type="audio/mpeg">
+                    </audio>
+                    <hr>
+                    <audio controls class="w-100">
+                        <source src="media/bonobo_migration.ogg" type="audio/ogg">
+                        <source src="media/bonobo_migration.wav" type="audio/wav">
+                        <source src="media/bonobo_migration" type="audio/mpeg">
+                    </audio>
+                    <hr>
+                    <audio controls class="w-100">
+                        <source src="media/bonobo_migration.ogg" type="audio/ogg">
+                        <source src="media/bonobo_migration.wav" type="audio/wav">
+                        <source src="media/bonobo_migration" type="audio/mpeg">
+                    </audio>
+                    <hr>
+                    <audio controls class="w-100">
+                        <source src="media/bonobo_migration.ogg" type="audio/ogg">
+                        <source src="media/bonobo_migration.wav" type="audio/wav">
+                        <source src="media/bonobo_migration" type="audio/mpeg">
+                    </audio>
+                </div>
+
+                <div class="col-md-10">
+                    <picture>
+                        <source media="(min-width:1200px)" srcset="media/photo3.jpg">
+                        <source media="(min-width:768px)" srcset="media/halfdome_600.jpg">
+                        <img src="/Users/karinanunesdemello/Documents/GitHub/nunes_webdesign3/homework/week_12_multimedia/media/halfdome_600.jpg"
+                            alt="half dome">
+                    </picture>
+                </div>
+            </div>
+        </div>
+        <hr>
+
+        <div class="row">
+            <button id="actionCall" type="button" class="btn btn-info btn-lg btn-block p-2">Join us now!</button>
+        </div>
+
+
+
+    </main>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  </body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+</body>
+
 </html>
