@@ -1,0 +1,33 @@
+body, html{
+    font-family: 'Open Sans', sans-serif;
+    height:100%;
+    background-image: url(/Users/karinanunesdemello/Documents/GitHub/nunes_webdesign3/homework/week_13_final/assets/Untitled-2.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blog-header-logo{
+    color: #057F8C;
+    font-size: 35px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+    
+}
+
+.blog-header-logo:hover{
+    text-decoration: none;
+}
+
+a {
+    color:lightslategray;
+}
+
+a:hover{
+    text-decoration: none;
+    color: #8FBFB6;
+}
+
+a:active{
+    text-decoration: none;
+    color: #8FBFB6;
+}
