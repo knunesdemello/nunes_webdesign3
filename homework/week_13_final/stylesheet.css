@@ -403,9 +403,3 @@ footer li a:hover {
     border-radius: 50%;
     border-color: transparent;
 }
-
-.jumbotron {
-    background-image: url(assets/jumbotron.jpg);
-    background-size: cover;
-    height: 500px;
-  }
