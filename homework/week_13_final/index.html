@@ -1,103 +1,446 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- MY CSS -->
-    <link rel="stylesheet" href="/Users/karinanunesdemello/Documents/GitHub/nunes_webdesign3/homework/week_13_final/stylesheet.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+    integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 
-    <!-- GOOGLE FONTS -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;400;800&family=Open+Sans&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/1d583462d0.js" crossorigin="anonymous"></script>
 
+  <!-- MY CSS -->
+  <link rel="stylesheet"
+    href="/Users/karinanunesdemello/Documents/GitHub/nunes_webdesign3/homework/week_13_final/stylesheet.css">
 
-    <title>CANDID e-commerce Homepage</title>
-  </head>
-  <body>
-    <!-- START NAV -->
+  <!-- GOOGLE FONTS -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;400;800&family=Open+Sans&display=swap"
+    rel="stylesheet">
+  <style>
+    .jumbotron {
+      background-image: url(/Users/karinanunesdemello/Documents/GitHub/nunes_webdesign3/homework/week_13_final/assets/jumbotron.jpg);
+      background-size: cover;
+      height: 500px;
+    }
+
+    .card-btn {
+      text-decoration: none;
+      color: #057F8C;
+    }
+
+    .card-btn:hover {
+      text-decoration: none;
+      color: #8FBFB6;
+      cursor: pointer;
+    }
+  </style>
+
+  <title>CANDID e-commerce Homepage</title>
+</head>
+
+<body>
+  <!-- START NAV -->
+  <header>
+    <!--Navbar-->
+    <nav class="navbar fixed-top mt-3 navbar-expand-md shadow-sm">
+      <a class="navbar-brand p-0 ml-2 mb-3" href="index.html">Candid.</a>
+      <!--Nav-->
+      <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"><i class="fas fa-bars mt-0" aria-hidden="true">
+          </i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto mb-3 text-center">
+          <li class="nav-item">
+            <a class=" nav-link" href="store.html">Shop</a>
+          </li>
+          <li class="nav-item">
+            <a class=" nav-link" href="philosophy.html">Our Philosophy</a>
+          </li>
+          <li class="nav-item">
+            <a class=" nav-link" href="blog.html">Blog</a>
+          </li>
+          <li class="nav-item">
+            <a class=" nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <!--Cart-->
+        <div class="navbar-nav mb-3 text-center">
+          <a class=" nav-link" href="checkoutPage.html">
+            <i class="fa fa-shopping-cart" aria-hidden="true">
+            </i>
+            <span id="cartItem" class="p-0">0</span>
+          </a>
+        </div>
+        <!--end cart-->
+    </nav>
+  </header>
+  <!-- END NAV -->
+
+  <main>
+    <!--HEADER-->
+    <div class="jumbotron jumbotron-fluid text-center">
+      <div class="container">
+        <div class="overlay">
+          <h1 class="jumbotron-text">Honest Brand</h1>
+          <p class="">Available Now</p>
+          <a class="link-btn" href="store.html" role="button"><span>SHOP NOW</span></a>
+        </div>
+      </div>
+    </div>
+
+    </div>
+    <!--END HEADER-->
+
     <div class="container">
-        <header class="blog-header py-3">
-          <div class="row flex-nowrap justify-content-between align-items-center">
-            <div class="col-4 pt-1"></div>
-            <div class="col-4 text-center">
-              <a class="blog-header-logo" href="index.html">Candid.</a>
-            </div>
-            <div class="col-4 d-flex justify-content-end align-items-center">
-              <a class="text-muted" href="#" aria-label="Search">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24" focusable="false"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
-              </a>
-              <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
-            </div>
-          </div>
-        </header>
-      
-        <div class="nav-scroller py-1 mb-2">
-          <nav class="nav justify-content-center">
-            <a class="p-2" href="store.html">Store</a>
-            <a class="p-2" href="philosophy.html">Our Philosophy</a>
-            <a class="p-2" href="blog.html">Blog</a>
-            <a class="p-2" href="contact.html">Contact Us</a>
-          </nav>
+      <div class="row text-center p-5 my-5">
+        <h3>Candid is a shop committed to bringing you practical products & information for sustainable living.
+          We believe every product you use should be honest in its composition and gentle to our home.</h3>
+      </div>
+
+      <div class="row">
+        <div class="col-sm my-3 my-md-0">
+          <img src="assets/skincare.jpg" class="image" alt="" style="width:100%;">
+          <a class="img-link text-center" href="pages/store.html" role="button">Skincare</a>
         </div>
-    <!-- END NAV -->
-    
+
+        <div class="col-sm my-3 my-md-0">
+          <img src="assets/home.jpg" class="image" alt="" style="width:100%;">
+          <a class="img-link text-center" href="pages/store.html" role="button">Home</a>
+        </div>
+
+        <div class="col-sm my-3 my-md-0">
+          <img src="assets/bath.jpg" class="image" alt="" style="width:100%;">
+          <a class="img-link text-center" href="pages/store.html" role="button">Bath</a>
+        </div>
+
+        <hr>
+
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="row my-5 mt-md-5">
+        <h2 class="col text-center my-5 mt-md-5">Our Promise To You</h2>
+      </div>
+      <div class="row my-5 mt-md-5 mb-md-5">
+        <div class="col-sm col-md-3 text-center">
+          <img src="assets/world.png" class="png" alt="">
+          <h5 class="mt-4 p-1">Curated Products</h5>
+          <p class="text-muted">We source products from values-based brands making a
+            positive impact in the world</p>
+        </div>
+        <div class="col-sm col-md-3 text-center">
+          <img src="assets/hand.png" class="png" alt="">
+          <h5 class="mt-4 p-1">A Tree Planted For Every Order</h5>
+          <p class="text-muted">Your purchases plant trees, through our partnership with the
+            Trees for the Future Foundation</p>
+        </div>
+        <div class="col-sm col-md-3 text-center">
+          <img src="assets/recycle.png" class="png" alt="">
+          <h5 class="mt-4 p-1">Carbon Balanced</h5>
+          <p class="text-muted">We partner with TerraPass, sponsoring clean energy and
+            carbon reduction projects</p>
+        </div>
+        <div class="col-sm col-md-3 text-center">
+          <img src="assets/help.png" class="png" alt="">
+          <h5 class="mt-4 p-1">Giving Back</h5>
+          <p class="text-muted">A percentage of our profits goes straight to sustainability research, and community
+            projects</p>
+        </div>
+      </div>
+    </div>
 
 
-
-
-
-
-
-
-
-
-
-
-    <!-- FOOTER -->
-    <footer class="pt-4 my-md-5 pt-md-5 border-top">
+    <!--PRODUCT CAROUSEL-->
+    <div class="container">
+      <div class="row my-5 mt-md-5">
+        <h2 class="col text-center my-5 mt-md-5">Featured Products</h2>
+      </div>
+      <div class="container">
         <div class="row">
-          <div class="col-12 col-md">
-            <small class="d-block mb-3 text-muted">&copy; 2020</small>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Features</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="#">Cool stuff</a></li>
-              <li><a class="text-muted" href="#">Random feature</a></li>
-              <li><a class="text-muted" href="#">Team feature</a></li>
-              <li><a class="text-muted" href="#">Stuff for developers</a></li>
-              <li><a class="text-muted" href="#">Another one</a></li>
-              <li><a class="text-muted" href="#">Last time</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>Resources</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="#">Resource</a></li>
-              <li><a class="text-muted" href="#">Resource name</a></li>
-              <li><a class="text-muted" href="#">Another resource</a></li>
-              <li><a class="text-muted" href="#">Final resource</a></li>
-            </ul>
-          </div>
-          <div class="col-6 col-md">
-            <h5>About</h5>
-            <ul class="list-unstyled text-small">
-              <li><a class="text-muted" href="#">Team</a></li>
-              <li><a class="text-muted" href="#">Locations</a></li>
-              <li><a class="text-muted" href="#">Privacy</a></li>
-              <li><a class="text-muted" href="#">Terms</a></li>
-            </ul>
+          <div class="col-md-12">
+            <div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="0">
+              <!-- Carousel indicators -->
+              <ol class="carousel-indicators">
+                <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                <li data-target="#myCarousel" data-slide-to="1"></li>
+                <li data-target="#myCarousel" data-slide-to="2"></li>
+              </ol>
+              <!-- Wrapper for carousel items -->
+              <div class="carousel-inner">
+                <div class="item carousel-item active">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <div class="thumb-wrapper">
+                        <div class="img-box">
+                          <img src="/examples/images/products/ipad.jpg" class="img-responsive img-fluid" alt="">
+                        </div>
+                        <div class="thumb-content">
+                          <h4>Apple iPad</h4>
+                          <p class="item-price"><strike>$400.00</strike> <span>$369.00</span></p>
+                          <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="thumb-wrapper">
+                        <div class="img-box">
+                          <img src="/examples/images/products/headphone.jpg" class="img-responsive img-fluid" alt="">
+                        </div>
+                        <div class="thumb-content">
+                          <h4>Sony Headphone</h4>
+                          <p class="item-price"><strike>$25.00</strike> <span>$23.99</span></p>
+                          <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="thumb-wrapper">
+                        <div class="img-box">
+                          <img src="/examples/images/products/macbook-air.jpg" class="img-responsive img-fluid" alt="">
+                        </div>
+                        <div class="thumb-content">
+                          <h4>Macbook Air</h4>
+                          <p class="item-price"><strike>$899.00</strike> <span>$649.00</span></p>
+                          <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="thumb-wrapper">
+                        <div class="img-box">
+                          <img src="/examples/images/products/nikon.jpg" class="img-responsive img-fluid" alt="">
+                        </div>
+                        <div class="thumb-content">
+                          <h4>Nikon DSLR</h4>
+                          <p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
+                          <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item carousel-item">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <div class="thumb-wrapper">
+                        <div class="img-box">
+                          <img src="/examples/images/products/play-station.jpg" class="img-responsive img-fluid" alt="">
+                        </div>
+                        <div class="thumb-content">
+                          <h4>Sony Play Station</h4>
+                          <p class="item-price"><strike>$289.00</strike> <span>$269.00</span></p>
+                          <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="thumb-wrapper">
+                        <div class="img-box">
+                          <img src="/examples/images/products/macbook-pro.jpg" class="img-responsive img-fluid" alt="">
+                        </div>
+                        <div class="thumb-content">
+                          <h4>Macbook Pro</h4>
+                          <p class="item-price"><strike>$1099.00</strike> <span>$869.00</span></p>
+                          <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="thumb-wrapper">
+                        <div class="img-box">
+                          <img src="/examples/images/products/speaker.jpg" class="img-responsive img-fluid" alt="">
+                        </div>
+                        <div class="thumb-content">
+                          <h4>Bose Speaker</h4>
+                          <p class="item-price"><strike>$109.00</strike> <span>$99.00</span></p>
+                          <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="thumb-wrapper">
+                        <div class="img-box">
+                          <img src="/examples/images/products/galaxy.jpg" class="img-responsive img-fluid" alt="">
+                        </div>
+                        <div class="thumb-content">
+                          <h4>Samsung Galaxy S8</h4>
+                          <p class="item-price"><strike>$599.00</strike> <span>$569.00</span></p>
+                          <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="item carousel-item">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      <div class="thumb-wrapper">
+                        <div class="img-box">
+                          <img src="/examples/images/products/iphone.jpg" class="img-responsive img-fluid" alt="">
+                        </div>
+                        <div class="thumb-content">
+                          <h4>Apple iPhone</h4>
+                          <p class="item-price"><strike>$369.00</strike> <span>$349.00</span></p>
+                          <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="thumb-wrapper">
+                        <div class="img-box">
+                          <img src="/examples/images/products/canon.jpg" class="img-responsive img-fluid" alt="">
+                        </div>
+                        <div class="thumb-content">
+                          <h4>Canon DSLR</h4>
+                          <p class="item-price"><strike>$315.00</strike> <span>$250.00</span></p>
+                          <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="thumb-wrapper">
+                        <div class="img-box">
+                          <img src="/examples/images/products/pixel.jpg" class="img-responsive img-fluid" alt="">
+                        </div>
+                        <div class="thumb-content">
+                          <h4>Google Pixel</h4>
+                          <p class="item-price"><strike>$450.00</strike> <span>$418.00</span></p>
+                          <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-sm-3">
+                      <div class="thumb-wrapper">
+                        <div class="img-box">
+                          <img src="/examples/images/products/watch.jpg" class="img-responsive img-fluid" alt="">
+                        </div>
+                        <div class="thumb-content">
+                          <h4>Apple Watch</h4>
+                          <p class="item-price"><strike>$350.00</strike> <span>$330.00</span></p>
+                          <a href="#" class="btn btn-primary">Add to Cart</a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Carousel controls -->
+              <a class="carousel-control left carousel-control-prev" href="#myCarousel" data-slide="prev">
+                <i class="fa fa-angle-left"></i>
+              </a>
+              <a class="carousel-control right carousel-control-next" href="#myCarousel" data-slide="next">
+                <i class="fa fa-angle-right"></i>
+              </a>
+            </div>
           </div>
         </div>
-      </footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
-  </body>
+      </div>
+      <!--END CAROUSEL-->
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 p-4 p-md-1">
+            <div class="card">
+              <img src="assets/zerowaste.jpg" class="card-img-top img-responsive" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">Zero Waste For Beginners</h5>
+                <p class="card-text">Zero waste is an art of living while creating the least possible amount of trash,
+                  thus decreasing our carbon footprint.</p>
+                <a href="blog.html" class="card-btn">Read more...</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 p-4 p-md-1">
+            <div class="card">
+              <img src="assets/sustainability.jpg" class="card-img-top img-responsive" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">What Is Sustainability?</h5>
+                <p class="card-text">Meeting the needs of the present without compromising the ability of future
+                  generations...</p>
+                <a href="blog.html" class="card-btn">Read More...</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 p-4 p-md-1">
+            <div class="card">
+              <img src="assets/plants.jpg" class="card-img-top img-responsive" alt="...">
+              <div class="card-body">
+                <h5 class="card-title">The Power Of Plants</h5>
+                <p class="card-text">Plants maintain the atmosphere. They produce oxygen and absorb carbon dioxide
+                  during photosynthesis.</p>
+                <a href="blog.html" class="card-btn">Read More...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </main>
+
+
+
+
+
+
+  <!-- FOOTER -->
+  <footer class=" pt-4 my-md-5 py-5 border-top footer-content ml-md-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-sm-4 text-muted text-center text-md-left">
+          <h5>Contact</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="mail" href="mailto:contact@candid.com">contact@candid.com</a></li>
+            <li><a class="phone">1800-CANDID</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-4 text-muted text-center text-md-left">
+          <h5>Need Help?</h5>
+          <ul class="list-unstyled text-small">
+            <li><a class="faq" href="faq.html">FAQ</a></li>
+          </ul>
+        </div>
+        <div class="col-12 col-sm-4 text-muted text-center text-md-left">
+          <h5>Follow Us</h5>
+          <ul class="d-flex mx-auto justify-content-center justify-content-md-start list-unstyled text-small">
+            <li class="sociaLink p-2"><a href="#"><i class="fa fa-facebook"></i></a></li>
+            <li class="socialLink p-2"><a href="#"><i class="fa fa-twitter"></i></a></li>
+            <li class="socialLink p-2"><a href="#"><i class="fa fa-instagram"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-md-12 text-center text-md-left">
+          <small class="d-block text-muted">&copy; 2020</small>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+  </script>
+
+  <!--carousel-->
+  <script>
+    $('.carousel').carousel({
+      interval: 3000,
+      pause: "hover",
+    })
+  </script>
+</body>
+
 </html>

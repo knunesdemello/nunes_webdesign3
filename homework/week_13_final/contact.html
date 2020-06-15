@@ -1,0 +1,396 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/1d583462d0.js" crossorigin="anonymous"></script>
+
+    <!-- MY CSS -->
+    <link rel="stylesheet"
+        href="/Users/karinanunesdemello/Documents/GitHub/nunes_webdesign3/homework/week_13_final/stylesheet.css">
+
+    <!-- GOOGLE FONTS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;400;800&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <style>
+        h4 {
+            color: grey;
+        }
+
+        h2 {
+            font-family: 'Montserrat Alternates', sans-serif;
+            color: #057F8C;
+        }
+
+        .form-vertical input,
+        .form-vertical select,
+        .form-vertical,
+        .disclosure__toggle,
+        .form-vertical textarea {
+            display: block;
+            width: 100%;
+            margin-bottom: 19.44444px;
+        }
+
+        h1 {
+            color: #057F8C;
+        }
+
+        .form-vertical input.input--error,
+        .form-vertical select.input--error,
+        .form-vertical .input--error.disclosure__toggle,
+        .form-vertical textarea.input--error {
+            margin-bottom: 11.66667px;
+        }
+
+        .form-vertical [type="radio"],
+        .form-vertical [type="checkbox"] {
+            display: inline-block;
+            width: auto;
+            margin-right: 5px;
+        }
+
+        .form-vertical [type="submit"],
+        .form-vertical .btn,
+        .form-vertical .shopify-payment-button .shopify-payment-button__button--unbranded,
+        .shopify-payment-button .form-vertical .shopify-payment-button__button--unbranded {
+            display: inline-block;
+            width: auto;
+        }
+
+        .form-single-field {
+            margin: 0 auto 55px;
+            max-width: 35rem;
+        }
+
+        .form-single-field .input--error {
+            margin-bottom: 0;
+        }
+
+        .note,
+        .form-message {
+            padding: 8px;
+            margin: 0 0 27.5px;
+        }
+
+        @media only screen and (min-width: 750px) {
+
+            .note,
+            .form-message {
+                padding: 10px;
+            }
+        }
+
+        .note {
+            border: 1px solid #ccc;
+        }
+
+        .form-message--success {
+            border: 1px solid #1f873d;
+            background-color: #f8fff9;
+            color: #1f873d;
+            display: block;
+            width: 100%;
+        }
+
+        .form-message--error {
+            color: #651818;
+            border: 1px solid #d20000;
+            background-color: #fff8f8;
+            padding: 1rem 1.3rem;
+            text-align: left;
+            width: 100%;
+        }
+
+        .form-message--error li {
+            list-style-type: disc;
+            list-style-position: inside;
+        }
+
+        .form-message--error .form-message__title {
+            font-size: 1.2em;
+        }
+
+        .form-message--error .form-message__link,
+        .form-message--error a {
+            display: inline-block;
+            text-decoration: underline;
+            text-decoration-skip-ink: auto;
+            color: #651818;
+        }
+
+        .form-message--error .form-message__link:hover,
+        .form-message--error .form-message__link:focus,
+        .form-message--error a:hover,
+        .form-message--error a:focus {
+            text-decoration: none;
+            color: #651818;
+        }
+
+        .input-group {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            width: 100%;
+            -webkit-flex-wrap: wrap;
+            -moz-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+            -webkit-justify-content: center;
+            -ms-justify-content: center;
+            justify-content: center;
+        }
+
+        .form-vertical .input-group {
+            margin-bottom: 55px;
+        }
+
+        .input-group--nowrap {
+            flex-wrap: nowrap;
+        }
+
+        .input-group--error {
+            margin-bottom: 11.66667px;
+        }
+
+        .input-group__field,
+        .input-group__field input,
+        .input-group__btn .btn,
+        .input-group__btn .shopify-payment-button .shopify-payment-button__button--unbranded,
+        .shopify-payment-button .input-group__btn .shopify-payment-button__button--unbranded {
+            min-height: 42px;
+        }
+
+        @media only screen and (min-width: 750px) {
+
+            .input-group__field,
+            .input-group__field input,
+            .input-group__btn .btn,
+            .input-group__btn .shopify-payment-button .shopify-payment-button__button--unbranded,
+            .shopify-payment-button .input-group__btn .shopify-payment-button__button--unbranded {
+                min-height: 46px;
+            }
+        }
+
+        .input-group__field {
+            -ms-flex-preferred-size: 15rem;
+            -webkit-flex-basis: 15rem;
+            -moz-flex-basis: 15rem;
+            flex-basis: 15rem;
+            flex-grow: 9999;
+            margin-bottom: 1rem;
+            border-radius: 2px 0 0 2px;
+            text-align: left;
+        }
+
+        .input-group__field input {
+            width: 100%;
+        }
+
+        .form-vertical .input-group__field {
+            margin: 0;
+        }
+
+        .input-group__field--connected {
+            margin-bottom: 0;
+        }
+
+        .input-group__field--connected input {
+            border-top-right-radius: 0;
+            border-bottom-right-radius: 0;
+        }
+
+        .input-group__btn {
+            flex-grow: 1;
+        }
+
+        .btn {
+            background-color: #8FBFB6;
+            padding: 10px 20px;
+            font-size: 16px;
+            color: white;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            cursor: pointer;
+            transition: 0.5s;
+        }
+
+        .btn:hover {
+            text-decoration: none;
+            color: white;
+            background-color: #057F8C;
+            transform: scale(1.1);
+        }
+    </style>
+
+    <title>CANDID e-commerce Homepage</title>
+</head>
+
+<body>
+    <header>
+        <!--Navbar-->
+        <nav class="navbar fixed-top mt-3 navbar-expand-md shadow-sm">
+            <a class="navbar-brand p-0 ml-2 mb-3" href="index.html">Candid.</a>
+            <!--Nav-->
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars mt-0" aria-hidden="true">
+                    </i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto mb-3 text-center">
+                    <li class="nav-item">
+                        <a class=" nav-link" href="store.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" nav-link" href="philosophy.html">Our Philosophy</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class=" nav-link" href="contact.html">Contact Us<span class="sr-only">(current)</span></a>
+                    </li>
+                </ul>
+                <!--Cart-->
+                <div class="navbar-nav mb-3 text-center">
+                    <a class=" nav-link" href="checkoutPage.html">
+                        <i class="fa fa-shopping-cart" aria-hidden="true">
+                        </i>
+                        <span id="cartItem" class="p-0">0</span>
+                    </a>
+                </div>
+                <!--end cart-->
+            </div>
+
+
+        </nav>
+    </header>
+    <!-- END NAV -->
+
+    <main>
+        <div class="container">
+            <div class="row text-center">
+                <div class="col pt-5 mt-5 p-sm-5">
+                    <h1>Contact Us</h1>
+                </div>
+            </div>
+            <div class="row p-3 my-3 mt-sm-0">
+
+                <div class="col-sm-6 text-center my-3 p-2">
+                    <br>
+                    <br>
+                    <h2>Candid.</h2>
+                    <h4>1721 S Bundy Drive, <br>Los Angeles, CA, 90025</h4>
+                    <h4>contact@candid.com | +424 349 5839</h4>
+                </div>
+                <div class="col-sm-6 d-flex justify-content-center">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52911.17075388511!2d-118.4549437744093!3d34.01954127947996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bb6b08b2e095%3A0x3cae1bb68142108b!2s1721%20S%20Bundy%20Dr%2C%20Los%20Angeles%2C%20CA%2090025!5e0!3m2!1sen!2sus!4v1592234355013!5m2!1sen!2sus"
+                        width="600" height="450" frameborder="0" style="border:0;" allowfullscreen=""
+                        aria-hidden="false" tabindex="0" class="embed-responsive-item"></iframe>
+                </div>
+            </div>
+            <div class="contact-form form-vertical">
+                <form method="post" action="/contact#ContactForm" id="ContactForm" accept-charset="UTF-8"
+                    class="contact-form"><input type="hidden" name="form_type" value="contact" /><input type="hidden"
+                        name="utf8" value="✓" />
+                    <div class="grid grid--half-gutters">
+                        <div class="grid__item medium-up--one-half">
+                            <label for="ContactForm-name">Name</label>
+                            <input type="text" id="ContactForm-name" name="contact[Name]" value="">
+                        </div>
+                        <div class="grid__item medium-up--one-half">
+                            <label for="ContactForm-email">Email <span aria-hidden="true">*</span></label>
+                            <input type="email" id="ContactForm-email" name="contact[email]" autocorrect="off"
+                                autocapitalize="off" value="" aria-required="true">
+                        </div>
+                    </div>
+
+                    <label for="ContactForm-phone">Phone Number</label>
+                    <input type="tel" id="ContactForm-phone" name="contact[Phone Number]" pattern="[0-9\-]*" value="">
+
+                    <label for="ContactForm-message">Message</label>
+                    <textarea rows="10" id="ContactForm-message" name="contact[Message]"></textarea>
+
+                    <input type="submit" class="btn" value="Send">
+
+                </form>
+            </div>
+        </div>
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="pt-4 my-md-5 py-5 border-top footer-content ml-md-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-4 text-muted text-center text-md-left">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="mail" href="mailto:contact@candid.com">contact@candid.com</a></li>
+                        <li><a class="phone">1800-CANDID</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-4 text-muted text-center text-md-left">
+                    <h5>Need Help?</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="faq" href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-4 text-muted text-center text-md-left">
+                    <h5>Follow Us</h5>
+                    <ul class="d-flex mx-auto justify-content-center justify-content-md-start list-unstyled text-small">
+                        <li class="sociaLink p-2"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="socialLink p-2"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="socialLink p-2"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-12 text-center text-md-left">
+                    <small class="d-block text-muted">&copy; 2020</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function registerGA() {
+            for (var e = document.getElementsByTagName("form"), n = 0; n < e.length; n++)
+                try {
+                    if ("post" == e[n].method) {
+                        var t = document.createElement("input");
+                        t.type = "hidden", t.name = URCHINFIELD, t.value = getUrchinFieldValue(), e[n].appendChild(t)
+                    }
+                } catch (o) {}
+        }! function () {
+            var e = window.onload;
+            e === undefined || null == e ? window.onload = function () {
+                registerGA()
+            } : window.onload = function () {
+                registerGA(), e()
+            }
+        }();
+    </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

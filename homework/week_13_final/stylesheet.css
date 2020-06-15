@@ -1,33 +1,405 @@
-body, html{
+body,
+html {
     font-family: 'Open Sans', sans-serif;
-    height:100%;
-    background-image: url(/Users/karinanunesdemello/Documents/GitHub/nunes_webdesign3/homework/week_13_final/assets/Untitled-2.svg);
+    height: 100%;
+    background-image: url();
     background-repeat: no-repeat;
     background-size: cover;
 }
 
-.blog-header-logo{
+/*Navbar*/
+nav {
+    border: none;
+}
+
+a.navbar-brand {
     color: #057F8C;
     font-size: 35px;
     font-family: 'Montserrat Alternates', sans-serif;
     font-weight: bold;
-    
+    letter-spacing: -1px;
+
 }
 
-.blog-header-logo:hover{
+.navbar-brand:hover {
     text-decoration: none;
+    color: #057F8C;
 }
 
-a {
-    color:lightslategray;
+.navbar-brand span {
+    position: relative;
 }
 
-a:hover{
+nav a {
+    color: lightslategray;
+    transition: all .2s ease-out;
+
+}
+
+nav a:hover {
     text-decoration: none;
     color: #8FBFB6;
 }
 
-a:active{
+nav a:active {
     text-decoration: none;
     color: #8FBFB6;
+}
+
+.navbar-toggler {
+    color: lightslategray;
+}
+
+.navbar-toggler:focus,
+.navbar-toggler:active {
+    outline: none;
+}
+
+@media (min-width: 575.98px) {
+    .navbar-brand {
+        font-size: 60px;
+    }
+
+    nav a {
+        transition: all .2s ease-out;
+    }
+
+    nav a:hover {
+        text-decoration: none;
+        color: #8FBFB6;
+        transform: scale(1.1);
+    }
+
+    .navbar-toggler:focus,
+    .navbar-toggler:active {
+        outline: none;
+    }
+}
+
+/*Header Overlay*/
+
+.overlay {
+    position: absolute;
+    width: 60%;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 10px 20px 20px;
+    background: rgba(255, 255, 255, .5);
+}
+
+.overlay h1 {
+    font-family: 'Open Sans', sans-serif;
+    color: lightslategray;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.overlay p {
+    font-family: 'Open Sans', sans-serif;
+    color: lightcoral;
+    font-size: 14px;
+    font-weight: 700;
+    padding-bottom: 8px;
+}
+
+.overlay .btn-custom {
+    padding: 8px 12px;
+}
+
+.overlay .btn-custom:hover {
+    color: #8FBFB6;
+}
+
+@media (min-width: 576px) {
+    .overlay {
+        width: 55%;
+    }
+
+    .overlay h1 {
+        font-size: 28px;
+    }
+
+    .overlay p {
+        font-size: 16px;
+        font-weight: 700;
+        padding-bottom: 18px;
+    }
+}
+
+@media (min-width: 768px) {
+    .overlay h1 {
+        font-size: 36px;
+        padding-bottom: 12px;
+    }
+
+    .overlay p {
+        font-size: 18px;
+        font-weight: 700;
+        padding-bottom: 18px;
+    }
+
+    .overlay .btn-custom {
+        font-family: 'Open Sans', sans-serif;
+        padding: 10px 14px;
+    }
+}
+
+@media (min-width: 992px) {
+    .overlay {
+        width: 40%;
+    }
+
+    .overlay h1 {
+        font-size: 48px;
+        padding-bottom: 12px;
+    }
+
+    .overlay p {
+        font-size: 18px;
+        font-weight: 700;
+        padding-bottom: 18px;
+    }
+
+    .overlay .btn-custom {
+        font-family: 'Open Sans', sans-serif;
+        padding: 12px 16px;
+    }
+
+}
+
+
+
+.btn-custom {
+    background-color: #8FBFB6;
+    border: none;
+    border-radius: 0px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 16px;
+}
+
+.btn-custom:hover {
+    background-color: #8FBFB6;
+    color: white;
+    text-decoration: none;
+}
+
+.link-btn {
+    background-color: #8FBFB6;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+.link-btn:hover {
+    text-decoration: none;
+    color: white;
+    background-color: #057F8C;
+}
+
+/*Carousel button animation*/
+.link-btn span {
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.5s;
+}
+
+
+.link-btn:hover span {
+    transform: scale(1.1);
+}
+
+/*HOME BOX STYLES*/
+
+.img-link {
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.img-link:hover {
+    text-decoration: none;
+    color: green;
+    transition: .5s ease;
+}
+
+.img-link:hover img {
+    opacity: .3;
+}
+
+/*SVG*/
+.png {
+    color: green;
+    width: 50px;
+    height: 50px;
+    left: 50%;
+}
+
+h5 {
+    font-size: 17px;
+}
+
+/*padding*/
+main:before {
+    content: "";
+    display: block;
+    height: 80px;
+}
+
+@media (min-width: 576px) {
+    main:before {
+        height: 100px;
+    }
+}
+
+/*FOOTER*/
+footer li a {
+    color: lightslategray;
+    text-decoration: none;
+
+}
+
+footer li a:hover {
+    text-decoration: none;
+    color: #8FBFB6;
+}
+
+
+
+
+
+
+.carousel {
+    margin: 50px auto;
+    padding: 0 70px;
+}
+
+.carousel .item {
+    min-height: 330px;
+    text-align: center;
+    overflow: hidden;
+}
+
+.carousel .item .img-box {
+    height: 160px;
+    width: 100%;
+    position: relative;
+}
+
+.carousel .item img {
+    max-width: 100%;
+    max-height: 100%;
+    display: inline-block;
+    position: absolute;
+    bottom: 0;
+    margin: 0 auto;
+    left: 0;
+    right: 0;
+}
+
+.carousel .item h4 {
+    font-size: 18px;
+    margin: 10px 0;
+}
+
+.carousel .item .btn {
+    color: #333;
+    border-radius: 0;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: bold;
+    background: none;
+    border: 1px solid #ccc;
+    padding: 5px 10px;
+    margin-top: 5px;
+    line-height: 16px;
+}
+
+.carousel .item .btn:hover,
+.carousel .item .btn:focus {
+    color: #fff;
+    background: green;
+    border-color: #000;
+    box-shadow: none;
+}
+
+.carousel .item .btn i {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+}
+
+.carousel .thumb-wrapper {
+    text-align: center;
+}
+
+.carousel .thumb-content {
+    padding: 15px;
+}
+
+.carousel .carousel-control {
+    height: 100px;
+    width: 40px;
+    background: none;
+    margin: auto 0;
+}
+
+.carousel .carousel-control i {
+    font-size: 30px;
+    position: absolute;
+    top: 50%;
+    display: inline-block;
+    margin: -16px 0 0 0;
+    z-index: 5;
+    left: 0;
+    right: 0;
+    color: rgba(0, 0, 0, 0.8);
+    text-shadow: none;
+    font-weight: bold;
+}
+
+.carousel .item-price {
+    font-size: 13px;
+    padding: 2px 0;
+}
+
+.carousel .item-price strike {
+    color: #999;
+    margin-right: 5px;
+}
+
+.carousel .item-price span {
+    color: #86bd57;
+    font-size: 110%;
+}
+
+.carousel .carousel-control.left i {
+    margin-left: -3px;
+}
+
+.carousel .carousel-control.left i {
+    margin-right: -3px;
+}
+
+.carousel .carousel-indicators {
+    bottom: -50px;
+}
+
+.carousel-indicators li,
+.carousel-indicators li.active {
+    width: 10px;
+    height: 10px;
+    margin: 4px;
+    border-radius: 50%;
+    border-color: transparent;
 }
