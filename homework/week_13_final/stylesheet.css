@@ -405,7 +405,7 @@ footer li a:hover {
 }
 
 .jumbotron {
-    background-image: url(/Users/karinanunesdemello/Documents/GitHub/nunes_webdesign3/homework/week_13_final/assets/jumbotron.jpg);
+    background-image: url(assets/jumbotron.jpg);
     background-size: cover;
     height: 500px;
   }
