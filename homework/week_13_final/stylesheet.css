@@ -403,3 +403,9 @@ footer li a:hover {
     border-radius: 50%;
     border-color: transparent;
 }
+
+.jumbotron {
+    background-image: url(/Users/karinanunesdemello/Documents/GitHub/nunes_webdesign3/homework/week_13_final/assets/jumbotron.jpg);
+    background-size: cover;
+    height: 500px;
+  }
