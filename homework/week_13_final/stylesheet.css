@@ -8,8 +8,20 @@ html {
 }
 
 /*Navbar*/
-nav {
-    border: none;
+.navbar {
+    width: 100%;
+    background-color: white;
+}
+
+.navbar-nav{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+@media (min-width: 576px) {
+    .navbar{
+        background-color: transparent;
+    }
 }
 
 a.navbar-brand {
@@ -33,6 +45,7 @@ a.navbar-brand {
 nav a {
     color: lightslategray;
     transition: all .2s ease-out;
+    padding:6px;
 
 }
 
@@ -48,12 +61,14 @@ nav a:active {
 
 .navbar-toggler {
     color: lightslategray;
+    background-color: white;
 }
 
 .navbar-toggler:focus,
 .navbar-toggler:active {
     outline: none;
 }
+
 
 @media (min-width: 575.98px) {
     .navbar-brand {
@@ -278,20 +293,24 @@ footer li a:hover {
 
 
 
-
+/*CAROUSEL*/
+@media only screen and (max-width: 575px) {
+    .carousel, .carousel-col{
+        display: none;
+    }
+}
 .carousel {
     margin: 50px auto;
-    padding: 0 70px;
+    padding: 0 20px;
 }
 
 .carousel .item {
-    min-height: 330px;
     text-align: center;
     overflow: hidden;
 }
 
 .carousel .item .img-box {
-    height: 160px;
+    height: 170px;
     width: 100%;
     position: relative;
 }
@@ -328,7 +347,7 @@ footer li a:hover {
 .carousel .item .btn:hover,
 .carousel .item .btn:focus {
     color: #fff;
-    background: green;
+    background: teal;
     border-color: #000;
     box-shadow: none;
 }
@@ -373,15 +392,6 @@ footer li a:hover {
     padding: 2px 0;
 }
 
-.carousel .item-price strike {
-    color: #999;
-    margin-right: 5px;
-}
-
-.carousel .item-price span {
-    color: #86bd57;
-    font-size: 110%;
-}
 
 .carousel .carousel-control.left i {
     margin-left: -3px;
@@ -403,3 +413,28 @@ footer li a:hover {
     border-radius: 50%;
     border-color: transparent;
 }
+
+@media (min-width: 576px) {
+    .carousel .item .img-box{
+        height: 180px;
+        width: 100%;
+        position: relative;
+    }
+}
+
+@media (min-width: 768px) {
+    .carousel .item .img-box {
+        height: 200px;
+        width: 100%;
+        position: relative;
+    }
+}
+
+@media (min-width: 992px) {
+    .carousel .item .img-box {
+        height: 290px;
+        width: 100%;
+        position: relative;
+    }
+}
+    
