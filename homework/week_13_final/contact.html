@@ -263,7 +263,7 @@
                 </ul>
                 <!--Cart-->
                 <div class="navbar-nav mb-3 text-center">
-                    <a class=" nav-link" href="checkoutPage.html">
+                    <a class=" nav-link" href="cart.html">
                         <i class="fa fa-shopping-cart" aria-hidden="true">
                         </i>
                         <span id="cartItem" class="p-0">0</span>
@@ -363,22 +363,26 @@
         </div>
     </footer>
     <script>
-        function registerGA() {
-            for (var e = document.getElementsByTagName("form"), n = 0; n < e.length; n++)
-                try {
-                    if ("post" == e[n].method) {
-                        var t = document.createElement("input");
-                        t.type = "hidden", t.name = URCHINFIELD, t.value = getUrchinFieldValue(), e[n].appendChild(t)
-                    }
-                } catch (o) {}
-        }! function () {
-            var e = window.onload;
-            e === undefined || null == e ? window.onload = function () {
-                registerGA()
-            } : window.onload = function () {
-                registerGA(), e()
+        // Example starter JavaScript for disabling form submissions if there are invalid fields
+    (function () {
+      'use strict'
+    
+      window.addEventListener('load', function () {
+        // Fetch all the forms we want to apply custom Bootstrap validation styles to
+        var forms = document.getElementsByClassName('needs-validation')
+    
+        // Loop over them and prevent submission
+        Array.prototype.filter.call(forms, function (form) {
+          form.addEventListener('submit', function (event) {
+            if (form.checkValidity() === false) {
+              event.preventDefault()
+              event.stopPropagation()
             }
-        }();
+            form.classList.add('was-validated')
+          }, false)
+        })
+      }, false)
+    }())
     </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

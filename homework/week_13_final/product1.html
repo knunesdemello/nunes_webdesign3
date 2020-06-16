@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/1d583462d0.js" crossorigin="anonymous"></script>
+
+    <!-- MY CSS -->
+    <link rel="stylesheet"
+        href="stylesheet.css">
+
+    <!-- GOOGLE FONTS -->
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100;400;800&family=Open+Sans&display=swap"
+        rel="stylesheet">
+    <style>
+
+.quantity {
+    float: left;
+    margin-right: 15px;
+    background-color: #eee;
+    position: relative;
+    width: 80px;
+    overflow: hidden
+}
+
+.quantity input {
+    margin: 0;
+    text-align: center;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    float: right;
+    color: #000;
+    font-size: 20px;
+    border: 0;
+    outline: 0;
+    background-color: #F6F6F6
+}
+
+.quantity input.qty {
+    position: relative;
+    border: 0;
+    width: 100%;
+    height: 40px;
+    padding: 10px 25px 10px 10px;
+    text-align: center;
+    font-weight: 400;
+    font-size: 15px;
+    border-radius: 0;
+    background-clip: padding-box
+}
+
+.quantity .minus, .quantity .plus {
+    line-height: 0;
+    background-clip: padding-box;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+    -webkit-background-size: 6px 30px;
+    -moz-background-size: 6px 30px;
+    color: #bbb;
+    font-size: 20px;
+    position: absolute;
+    height: 50%;
+    border: 0;
+    right: 0;
+    padding: 0;
+    width: 25px;
+    z-index: 3
+}
+
+.quantity .minus:hover, .quantity .plus:hover {
+    background-color: #dad8da
+}
+
+.quantity .minus {
+    bottom: 0
+}
+
+    </style>
+
+    <title>CANDID e-commerce Homepage</title>
+</head>
+
+<body>
+    <!-- START NAV -->
+    <header>
+        <!--Navbar-->
+        <nav class="navbar fixed-top mt-3 navbar-expand-md shadow-sm">
+            <a class="navbar-brand p-0 ml-2 mb-3" href="index.html">Candid.</a>
+            <!--Nav-->
+            <button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"><i class="fas fa-bars mt-0" aria-hidden="true">
+                    </i></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto mb-3 text-center">
+                    <li class="nav-item">
+                        <a class=" nav-link" href="store.html">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" nav-link" href="philosophy.html">Our Philosophy</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class=" nav-link" href="blog.html">Blog<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class=" nav-link" href="contact.html">Contact Us</a>
+                    </li>
+                </ul>
+                <!--Cart-->
+                <div class="navbar-nav mb-3 text-center">
+                    <a class=" nav-link" href="checkoutPage.html">
+                        <i class="fa fa-shopping-cart" aria-hidden="true">
+                        </i>
+                        <span id="cartItem" class="p-0">0</span>
+                    </a>
+                </div>
+                <!--end cart-->
+            </div>
+
+
+        </nav>
+    </header>
+    <!-- END NAV -->
+    <main>
+        <div class="container"></div>
+        <div class="card">
+                <div class="card-header bg-dark text-light">
+                    <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                    Nákupný košík
+                    <a href="{{route("product.home")}}" class="btn btn-outline-info btn-sm pull-right">Pokračovať v nakupovaní</a>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="card-body">
+    
+                    <div class="row">
+                        <div class="col-xs-2 col-md-2">
+                            <img class="img-responsive" src="http://placehold.it/120x80" alt="prewiew">
+                        </div>
+                        <div class="col-xs-4 col-md-6">
+                            <h4 class="product-name"><strong>Product name</strong></h4><h4><small>Product description</small></h4>
+                        </div>
+                        <div class="col-xs-6 col-md-4 row">
+                            <div class="col-xs-6 col-md-6 text-right" style="padding-top: 5px">
+                                <h6><strong>25.00 <span class="text-muted">x</span></strong></h6>
+                            </div>
+                            <div class="col-xs-4 col-md-4">
+                                <input type="text" class="form-control input-sm" value="1">
+                            </div>
+                            <div class="col-xs-2 col-md-2">
+                                <button type="button" class="btn btn-outline-danger btn-xs">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="row">
+                        <div class="col-xs-2 col-md-2">
+                            <img class="img-responsive" src="http://placehold.it/120x80" alt="prewiew">
+                        </div>
+                        <div class="col-xs-4 col-md-6">
+                            <h4 class="product-name"><strong>Product name</strong></h4><h4><small>Product description</small></h4>
+                        </div>
+                        <div class="col-xs-6 col-md-4 row">
+                            <div class="col-xs-6 col-md-6 text-right" style="padding-top: 5px">
+                                <h6><strong>25.00 <span class="text-muted">x</span></strong></h6>
+                            </div>
+                            <div class="col-xs-4 col-md-4">
+                                <input type="text" class="form-control input-sm" value="1">
+                            </div>
+                            <div class="col-xs-2 col-md-2">
+                                <button type="button" class="btn btn-outline-danger btn-xs">
+                                    <i class="fa fa-trash" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+    
+                    <hr>
+                    <div class="pull-right">
+                        <a href="{{route("product.home")}}" class="btn btn-outline-secondary pull-right">Aktualizovať košík</a>
+                    </div>
+                </div>
+                <div class="card-footer">
+                    <a href="{{route("product.home")}}" class="btn btn-success pull-right">Objednať</a>
+                    <div class="pull-right" style="margin: 5px">
+                        Celková cena: <b>50.00€</b>
+                    </div>
+                </div>
+            </div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="pt-4 my-md-5 py-5 border-top footer-content ml-md-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-sm-4 text-muted text-center text-md-left">
+                    <h5>Contact</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="mail" href="mailto:contact@candid.com">contact@candid.com</a></li>
+                        <li><a class="phone">1800-CANDID</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-4 text-muted text-center text-md-left">
+                    <h5>Need Help?</h5>
+                    <ul class="list-unstyled text-small">
+                        <li><a class="faq" href="faq.html">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="col-12 col-sm-4 text-muted text-center text-md-left">
+                    <h5>Follow Us</h5>
+                    <ul class="d-flex mx-auto justify-content-center justify-content-md-start list-unstyled text-small">
+                        <li class="sociaLink p-2"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li class="socialLink p-2"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                        <li class="socialLink p-2"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-12 text-center text-md-left">
+                    <small class="d-block text-muted">&copy; 2020</small>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
