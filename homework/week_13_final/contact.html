@@ -28,189 +28,11 @@
 
         h2 {
             font-family: 'Montserrat Alternates', sans-serif;
+            color: darkslategray;
+        }
+
+        h1{
             color: #057F8C;
-        }
-
-        .form-vertical input,
-        .form-vertical select,
-        .form-vertical,
-        .disclosure__toggle,
-        .form-vertical textarea {
-            display: block;
-            width: 100%;
-            margin-bottom: 19.44444px;
-        }
-
-        h1 {
-            color: #057F8C;
-        }
-
-        .form-vertical input.input--error,
-        .form-vertical select.input--error,
-        .form-vertical .input--error.disclosure__toggle,
-        .form-vertical textarea.input--error {
-            margin-bottom: 11.66667px;
-        }
-
-        .form-vertical [type="radio"],
-        .form-vertical [type="checkbox"] {
-            display: inline-block;
-            width: auto;
-            margin-right: 5px;
-        }
-
-        .form-vertical [type="submit"],
-        .form-vertical .btn,
-        .form-vertical .shopify-payment-button .shopify-payment-button__button--unbranded,
-        .shopify-payment-button .form-vertical .shopify-payment-button__button--unbranded {
-            display: inline-block;
-            width: auto;
-        }
-
-        .form-single-field {
-            margin: 0 auto 55px;
-            max-width: 35rem;
-        }
-
-        .form-single-field .input--error {
-            margin-bottom: 0;
-        }
-
-        .note,
-        .form-message {
-            padding: 8px;
-            margin: 0 0 27.5px;
-        }
-
-        @media only screen and (min-width: 750px) {
-
-            .note,
-            .form-message {
-                padding: 10px;
-            }
-        }
-
-        .note {
-            border: 1px solid #ccc;
-        }
-
-        .form-message--success {
-            border: 1px solid #1f873d;
-            background-color: #f8fff9;
-            color: #1f873d;
-            display: block;
-            width: 100%;
-        }
-
-        .form-message--error {
-            color: #651818;
-            border: 1px solid #d20000;
-            background-color: #fff8f8;
-            padding: 1rem 1.3rem;
-            text-align: left;
-            width: 100%;
-        }
-
-        .form-message--error li {
-            list-style-type: disc;
-            list-style-position: inside;
-        }
-
-        .form-message--error .form-message__title {
-            font-size: 1.2em;
-        }
-
-        .form-message--error .form-message__link,
-        .form-message--error a {
-            display: inline-block;
-            text-decoration: underline;
-            text-decoration-skip-ink: auto;
-            color: #651818;
-        }
-
-        .form-message--error .form-message__link:hover,
-        .form-message--error .form-message__link:focus,
-        .form-message--error a:hover,
-        .form-message--error a:focus {
-            text-decoration: none;
-            color: #651818;
-        }
-
-        .input-group {
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
-            width: 100%;
-            -webkit-flex-wrap: wrap;
-            -moz-flex-wrap: wrap;
-            -ms-flex-wrap: wrap;
-            flex-wrap: wrap;
-            -webkit-justify-content: center;
-            -ms-justify-content: center;
-            justify-content: center;
-        }
-
-        .form-vertical .input-group {
-            margin-bottom: 55px;
-        }
-
-        .input-group--nowrap {
-            flex-wrap: nowrap;
-        }
-
-        .input-group--error {
-            margin-bottom: 11.66667px;
-        }
-
-        .input-group__field,
-        .input-group__field input,
-        .input-group__btn .btn,
-        .input-group__btn .shopify-payment-button .shopify-payment-button__button--unbranded,
-        .shopify-payment-button .input-group__btn .shopify-payment-button__button--unbranded {
-            min-height: 42px;
-        }
-
-        @media only screen and (min-width: 750px) {
-
-            .input-group__field,
-            .input-group__field input,
-            .input-group__btn .btn,
-            .input-group__btn .shopify-payment-button .shopify-payment-button__button--unbranded,
-            .shopify-payment-button .input-group__btn .shopify-payment-button__button--unbranded {
-                min-height: 46px;
-            }
-        }
-
-        .input-group__field {
-            -ms-flex-preferred-size: 15rem;
-            -webkit-flex-basis: 15rem;
-            -moz-flex-basis: 15rem;
-            flex-basis: 15rem;
-            flex-grow: 9999;
-            margin-bottom: 1rem;
-            border-radius: 2px 0 0 2px;
-            text-align: left;
-        }
-
-        .input-group__field input {
-            width: 100%;
-        }
-
-        .form-vertical .input-group__field {
-            margin: 0;
-        }
-
-        .input-group__field--connected {
-            margin-bottom: 0;
-        }
-
-        .input-group__field--connected input {
-            border-top-right-radius: 0;
-            border-bottom-right-radius: 0;
-        }
-
-        .input-group__btn {
-            flex-grow: 1;
         }
 
         .btn {
@@ -228,7 +50,9 @@
             text-decoration: none;
             color: white;
             background-color: #057F8C;
-            transform: scale(1.1);
+        }
+        label{
+            color:darkslategray;
         }
     </style>
 
@@ -285,14 +109,41 @@
                 </div>
             </div>
             <div class="row p-3 my-3 mt-sm-0">
+                <!--CONTACT FORM-->
+                    <div class="col-md-6 order-md-1">
+                      <form class="needs-validation" novalidate>
+                        <div class="row">
+                          <div class="col mb-3">
+                            <label for="firstName">Name</label>
+                            <input type="text" class="form-control" id="firstName" placeholder="Jon Doe" value="" required>
+                            <div class="invalid-feedback">
+                              Valid first and last names are required.
+                            </div>
+                          </div>
+                        </div>
+                
+                
+                        <div class="mb-3">
+                          <label for="email">Email</label>
+                          <input type="email" class="form-control" id="email" placeholder="johndoe@gmail.com">
+                          <div class="invalid-feedback">
+                            Please enter a valid email address.
+                          </div>
+                        </div>
+                
+                        <div class="mb-3">
+                            <label for="exampleFormControlTextarea1">Message</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+                          <div class="invalid-feedback">
+                            Please enter a message.
+                          </div>
+                        </div>
+                        <hr class="mb-4">
 
-                <div class="col-sm-6 text-center my-3 p-2">
-                    <br>
-                    <br>
-                    <h2>Candid.</h2>
-                    <h4>1721 S Bundy Drive, <br>Los Angeles, CA, 90025</h4>
-                    <h4>contact@candid.com | +424 349 5839</h4>
-                </div>
+                        <hr class="mb-4">
+                        <button class="btn" type="submit">SEND</button>
+                      </form>
+                    </div>
                 <div class="col-sm-6 d-flex justify-content-center">
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52911.17075388511!2d-118.4549437744093!3d34.01954127947996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80c2bb6b08b2e095%3A0x3cae1bb68142108b!2s1721%20S%20Bundy%20Dr%2C%20Los%20Angeles%2C%20CA%2090025!5e0!3m2!1sen!2sus!4v1592234355013!5m2!1sen!2sus"
@@ -300,34 +151,14 @@
                         aria-hidden="false" tabindex="0" class="embed-responsive-item"></iframe>
                 </div>
             </div>
-            <div class="contact-form form-vertical">
-                <form method="post" action="/contact#ContactForm" id="ContactForm" accept-charset="UTF-8"
-                    class="contact-form"><input type="hidden" name="form_type" value="contact" /><input type="hidden"
-                        name="utf8" value="✓" />
-                    <div class="grid grid--half-gutters">
-                        <div class="grid__item medium-up--one-half">
-                            <label for="ContactForm-name">Name</label>
-                            <input type="text" id="ContactForm-name" name="contact[Name]" value="">
-                        </div>
-                        <div class="grid__item medium-up--one-half">
-                            <label for="ContactForm-email">Email <span aria-hidden="true">*</span></label>
-                            <input type="email" id="ContactForm-email" name="contact[email]" autocorrect="off"
-                                autocapitalize="off" value="" aria-required="true">
-                        </div>
-                    </div>
-
-                    <label for="ContactForm-phone">Phone Number</label>
-                    <input type="tel" id="ContactForm-phone" name="contact[Phone Number]" pattern="[0-9\-]*" value="">
-
-                    <label for="ContactForm-message">Message</label>
-                    <textarea rows="10" id="ContactForm-message" name="contact[Message]"></textarea>
-
-                    <input type="submit" class="btn" value="Send">
-
-                </form>
+    
+            <div class="col text-center my-0 p-2">
+                <br>
+                <br>
+                <h2>Candid.</h2>
+                <h4>1721 S Bundy Drive, Los Angeles, CA, 90025</h4>
+                <h4>contact@candid.com | +424 349 5839</h4>
             </div>
-        </div>
-        </div>
 
     </main>
 
