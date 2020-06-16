@@ -39,9 +39,20 @@
             color: #8FBFB6;
             text-decoration: none;
         }
-        .product_view .modal-dialog{max-width: 800px; width: 100%;}
-        .pre-cost{text-decoration: line-through; color: #a5a5a5;}
-        .space-ten{padding: 10px 0;}
+
+        .product_view .modal-dialog {
+            max-width: 800px;
+            width: 100%;
+        }
+
+        .pre-cost {
+            text-decoration: line-through;
+            color: #a5a5a5;
+        }
+
+        .space-ten {
+            padding: 10px 0;
+        }
     </style>
 
     <title>CANDID e-commerce Homepage</title>
@@ -113,111 +124,122 @@
         <!--PRODUCTS-->
         <section>
             <form>
-            <div class="container">
-                <div class="row text-center">
-                    <div class="col-md my-sm-1 my-md-0 p-4">
-                        <a href="product.html" data-toggle="modal"><img src="assets/products/product1.jpg" style="width:100%;" alt=""></a>
-                        <h5 class="mt-4">COCOOIL (16oz.)</h5>
-                        <h5 class="">Shampoo & Conditioner</h5>
-                        <p class="text-info">$12.99</p>
-                        <button type="button" class="btn add" id="addCart"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
-                        <button type="button" class="btn " data-toggle="modal" data-target="#product_view1"><i class="fa fa-search"></i> Quick View</button>
+                <div class="container">
+                    <div class="row text-center">
+                        <div class="col-md my-sm-1 my-md-0 p-4">
+                            <a href="product.html"><img src="assets/products/product1.jpg" style="width:100%;"
+                                    alt=""></a>
+                            <h5 class="mt-4">LOVE BEAUTY + PLANET</h5>
+                            <h5 class="">Shampoo & Conditioner (16oz.)</h5>
+                            <p class="text-info">$12.99</p>
+                            <button type="button" class="btn add" id="addCart"><i class="fa fa-shopping-cart"></i> Add
+                                To Cart</button>
+                            <button type="button" class="btn " data-toggle="modal" data-target="#product_view1"><i
+                                    class="fa fa-search"></i> Quick View</button>
+                        </div>
+                        <div class="col-md my-sm-1 my-md-0 p-4">
+                            <a href="#" data-toggle="modal" data-target="#product_view2"><img
+                                    src="assets/products/product2.jpg" style="width:100%;" alt=""></a>
+                            <h5 class="mt-4">ES LIPSTICK</h5>
+                            <h5 class="">5 Shades</h5>
+                            <p class="text-info">$4.99/ea</p>
+                            <button type="button" class="btn" id="addCart"><i class="fa fa-shopping-cart"></i> Add To
+                                Cart</button>
+                            <button type="button" class="btn " data-toggle="modal" data-target="#product_view2"><i
+                                    class="fa fa-search"></i> Quick View</button>
+                        </div>
+                        <div class="col-md my-sm-1 my-md-0 p-4">
+                            <a href="#" data-toggle="modal" data-target="#product_view3"><img
+                                    src="assets/products/product3.jpg" style="width:100%;" alt=""></a>
+                            <h5 class="mt-4">HONEST BEAUTY</h5>
+                            <h5 class="">Facial Oil (4oz.)</h5>
+                            <p class="text-info">$16.99</p>
+                            <button type="button" class="btn" id="addCart"><i class="fa fa-shopping-cart"></i> Add To
+                                Cart</button>
+                            <button type="button" class="btn " data-toggle="modal" data-target="#product_view3"><i
+                                    class="fa fa-search"></i> Quick View</button>
+                        </div>
+                        <div class="col-md my-sm-1 my-md-0 p-4 text-center">
+                            <img src="assets/products/product4.jpg" style="width:100%;" alt="">
+                            <h5 class="mt-4">TONIK (9oz.)</h5>
+                            <h5 class="">Facial Toner</h5>
+                            <p class="text-info">$7.99</p>
+                            <button type="button" class="btn "><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+                            <button type="button" class="btn "><i class="fa fa-search"></i> Quick View</button>
+                        </div>
                     </div>
-                    <div class="col-md my-sm-1 my-md-0 p-4">
-                        <a href="#"data-toggle="modal" data-target="#product_view2"><img src="assets/products/product2.jpg" style="width:100%;" alt=""></a>
-                        <h5 class="mt-4">ES LIPSTICK</h5>
-                        <h5 class="">5 Shades</h5>
-                        <p class="text-info">$4.99/ea</p>
-                        <button type="button" class="btn" id="addCart"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
-                        <button type="button" class="btn " data-toggle="modal" data-target="#product_view2"><i class="fa fa-search"></i> Quick View</button>
-                    </div>
-                    <div class="col-md my-sm-1 my-md-0 p-4">
-                        <a href="#"data-toggle="modal" data-target="#product_view3"><img src="assets/products/product3.jpg" style="width:100%;" alt=""></a>
-                        <h5 class="mt-4">HONEST BEAUTY</h5>
-                        <h5 class="">Facial Oil (4oz.)</h5>
-                        <p class="text-info">$16.99</p>
-                        <button type="button" class="btn" id="addCart"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
-                        <button type="button" class="btn " data-toggle="modal" data-target="#product_view3"><i class="fa fa-search"></i> Quick View</button>
-                    </div>
-                    <div class="col-md my-sm-1 my-md-0 p-4 text-center">
-                        <img src="assets/products/product4.jpg" style="width:100%;" alt="">
-                        <h5 class="mt-4">TONIK (9oz.)</h5>
-                        <h5 class="">Facial Toner</h5>
-                        <p class="text-info">$7.99</p>
-                        <button type="button" class="btn "><i class="fa fa-shopping-cart"></i> Add To Cart</button>
-                        <button type="button" class="btn "><i class="fa fa-search"></i> Quick View</button>
-                    </div>
-                </div>
 
-                <div class="row text-center">
-                    <div class="col-md my-sm-1 my-md-0 p-4">
-                        <img src="assets/products/product5.jpg" style="width:100%;" alt="">
-                        <h5 class="mt-4">ES DIFFUSER</h5>
-                        <h5 class="">+ 2 Essential Oils</h5>
-                        <p class="text-info">$19.99</p>
-                        <button type="button" class="btn "><i class="fa fa-shopping-cart"></i> Add To Cart</button>
-                        <button type="button" class="btn "><i class="fa fa-search"></i> Quick View</button>
+                    <div class="row text-center">
+                        <div class="col-md my-sm-1 my-md-0 p-4">
+                            <img src="assets/products/product5.jpg" style="width:100%;" alt="">
+                            <h5 class="mt-4">ES DIFFUSER</h5>
+                            <h5 class="">+ 2 Essential Oils</h5>
+                            <p class="text-info">$19.99</p>
+                            <button type="button" class="btn "><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+                            <button type="button" class="btn "><i class="fa fa-search"></i> Quick View</button>
+                        </div>
+                        <div class="col-md my-sm-1 my-md-0 p-4">
+                            <img src="assets/products/product6.jpg" style="width:100%;" alt="">
+                            <h5 class="mt-4">HONEST BABY WIPES</h5>
+                            <h5 class="">Non-Toxic | New Formula</h5>
+                            <p class="text-info">$7.99</p>
+                            <button type="button" class="btn "><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+                            <button type="button" class="btn "><i class="fa fa-search"></i> Quick View</button>
+                        </div>
+                        <div class="col-md my-sm-1 my-md-0 p-4">
+                            <img src="assets/products/product7.jpg" style="width:100%;" alt="">
+                            <h5 class="mt-4">CANDID BRAND</h5>
+                            <h5 class="">Multi-Purpose Cleaner</h5>
+                            <p class="text-info">$4.99/ea</p>
+                            <button type="button" class="btn "><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+                            <button type="button" class="btn "><i class="fa fa-search"></i> Quick View</button>
+                        </div>
+                        <div class="col-md my-sm-1 my-md-0 p-4">
+                            <img src="assets/products/product8.jpg" style="width:100%;" alt="">
+                            <h5 class="mt-4">RECYCLED WOOD UTENSILS</h5>
+                            <h5 class="">Set of 3</h5>
+                            <p class="text-info">$10.99</p>
+                            <button type="button" class="btn "><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+                            <button type="button" class="btn "><i class="fa fa-search"></i> Quick View</button>
+                        </div>
                     </div>
-                    <div class="col-md my-sm-1 my-md-0 p-4">
-                        <img src="assets/products/product6.jpg" style="width:100%;" alt="">
-                        <h5 class="mt-4">HONEST BABY WIPES</h5>
-                        <h5 class="">Non-Toxic | New Formula</h5>
-                        <p class="text-info">$7.99</p>
-                        <button type="button" class="btn "><i class="fa fa-shopping-cart"></i> Add To Cart</button>
-                        <button type="button" class="btn "><i class="fa fa-search"></i> Quick View</button>
-                    </div>
-                    <div class="col-md my-sm-1 my-md-0 p-4">
-                        <img src="assets/products/product7.jpg" style="width:100%;" alt="">
-                        <h5 class="mt-4">CANDID BRAND</h5>
-                        <h5 class="">Multi-Purpose Cleaner</h5>
-                        <p class="text-info">$4.99/ea</p>
-                        <button type="button" class="btn "><i class="fa fa-shopping-cart"></i> Add To Cart</button>
-                        <button type="button" class="btn "><i class="fa fa-search"></i> Quick View</button>
-                    </div>
-                    <div class="col-md my-sm-1 my-md-0 p-4">
-                        <img src="assets/products/product8.jpg" style="width:100%;" alt="">
-                        <h5 class="mt-4">RECYCLED WOOD UTENSILS</h5>
-                        <h5 class="">Set of 3</h5>
-                        <p class="text-info">$10.99</p>
-                        <button type="button" class="btn "><i class="fa fa-shopping-cart"></i> Add To Cart</button>
-                        <button type="button" class="btn "><i class="fa fa-search"></i> Quick View</button>
-                    </div>
-                </div>
             </form>
-                <div class="row text-center">
-                    <div class="col-md my-sm-1 my-md-0 p-4">
-                        <img src="assets/products/product9.jpg" style="width:100%;" alt="">
-                        <h5 class="mt-4">DRY HAY CANDLE</h5>
-                        <h5 class="">5 frangrances</h5>
-                        <p class="text-info">$12.99</p>
-                        <button type="button" class="btn "><i class="fa fa-shopping-cart"></i> Add To Cart</button>
-                        <button type="button" class="btn "><i class="fa fa-search"></i> Quick View</button>
-                    </div>
-                    <div class="col-md my-sm-1 my-md-0 p-4">
-                        <img src="assets/products/product10.jpg" style="width:100%;" alt="">
-                        <h5 class="mt-4">CANDID BRAND DIFFUSER</h5>
-                        <h5 class="">(essential oil not included)</h5>
-                        <p class="text-info">$29.99</p>
-                        <button type="button" class="btn "><i class="fa fa-shopping-cart"></i> Add To Cart</button>
-                        <button type="button" class="btn "><i class="fa fa-search"></i> Quick View</button>
-                    </div>
-                    <div class="col-md my-sm-1 my-md-0 p-4">
-                        <img src="assets/products/product11.jpg" style="width:100%;" alt="">
-                        <h5 class="mt-4">YOUNG LIVING ESSENTIAL OILS</h5>
-                        <h5 class="">5 fragrances</h5>
-                        <p class="text-info">$4.99/ea</p>
-                        <button type="button" class="btn" id="addCart"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
-                        <button type="button" class="btn"><i class="fa fa-search"></i> Quick View</button>
-                    </div>
-                    <div class="col-md my-sm-1 my-md-0 p-4">
-                        <img src="assets/products/product12.jpg" style="width:100%;" alt="">
-                        <h5 class="mt-4">MARSHOL HAND SANITIZER (16oz.)</h5>
-                        <h5 class="">Vitamin Enriched</h5>
-                        <p class="text-info">$12.99</p>
-                        <button type="button" class="btn" id="addCart"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
-                        <button type="button" class="btn "><i class="fa fa-search"></i> Quick View</button>
-                    </div>
+            <div class="row text-center">
+                <div class="col-md my-sm-1 my-md-0 p-4">
+                    <img src="assets/products/product9.jpg" style="width:100%;" alt="">
+                    <h5 class="mt-4">DRY HAY CANDLE</h5>
+                    <h5 class="">5 frangrances</h5>
+                    <p class="text-info">$12.99</p>
+                    <button type="button" class="btn "><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+                    <button type="button" class="btn "><i class="fa fa-search"></i> Quick View</button>
                 </div>
+                <div class="col-md my-sm-1 my-md-0 p-4">
+                    <img src="assets/products/product10.jpg" style="width:100%;" alt="">
+                    <h5 class="mt-4">CANDID BRAND DIFFUSER</h5>
+                    <h5 class="">(essential oil not included)</h5>
+                    <p class="text-info">$29.99</p>
+                    <button type="button" class="btn "><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+                    <button type="button" class="btn "><i class="fa fa-search"></i> Quick View</button>
+                </div>
+                <div class="col-md my-sm-1 my-md-0 p-4">
+                    <img src="assets/products/product11.jpg" style="width:100%;" alt="">
+                    <h5 class="mt-4">YOUNG LIVING ESSENTIAL OILS</h5>
+                    <h5 class="">5 fragrances</h5>
+                    <p class="text-info">$4.99/ea</p>
+                    <button type="button" class="btn" id="addCart"><i class="fa fa-shopping-cart"></i> Add To
+                        Cart</button>
+                    <button type="button" class="btn"><i class="fa fa-search"></i> Quick View</button>
+                </div>
+                <div class="col-md my-sm-1 my-md-0 p-4">
+                    <img src="assets/products/product12.jpg" style="width:100%;" alt="">
+                    <h5 class="mt-4">MARSHOL HAND SANITIZER (16oz.)</h5>
+                    <h5 class="">Vitamin Enriched</h5>
+                    <p class="text-info">$12.99</p>
+                    <button type="button" class="btn" id="addCart"><i class="fa fa-shopping-cart"></i> Add To
+                        Cart</button>
+                    <button type="button" class="btn "><i class="fa fa-search"></i> Quick View</button>
+                </div>
+            </div>
             </div>
         </section>
 
@@ -226,7 +248,8 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header justify-content-end">
-                    <a href="#" data-dismiss="modal" class="class pull-right"><span class="fas fa-times text-muted"></span></a>
+                    <a href="#" data-dismiss="modal" class="class pull-right"><span
+                            class="fas fa-times text-muted"></span></a>
                 </div>
                 <div class="modal-body p-5">
                     <div class="row">
@@ -234,9 +257,10 @@
                             <img src="assets/products/product1.jpg" style="width:100%;" alt="">
                         </div>
                         <div class="col-md-6 product_content">
-                            <h4><span>Cocooil</span></h4>
-                            <p>Indulge your senses with this exclusice blend with coconut oil, and ultra whipped egg white proteins. No paranbens, fragrances or sulfates.</p>
-                            <h3 class="cost"><span class="glyphicon glyphicon-usd"></span> $12.99 <small class="pre-cost"><span class="glyphicon glyphicon-usd"></span> 20.00</small></h3>
+                            <h4><span>LOVE BEAUTY + PLANET</span></h4>
+                            <p>Love Beauty and Planet Coconut Water & Mimosa Flower Volume Shampoo and Conditioner duo gently cleanses and detangles with a lightweight formula. No paranbens, fragrances or sulfates.</p>
+                            <h3 class="cost"><span class="glyphicon glyphicon-usd"></span> $12.99 <small
+                                    class="pre-cost"><span class="glyphicon glyphicon-usd"></span> 20.00</small></h3>
                             <div class="row">
                                 <div class="col-md-4 col-sm-6 col-xs-12">
                                     <select class="form-control" name="select">
@@ -260,7 +284,8 @@
                             </div>
                             <div class="space-ten"></div>
                             <div class="btn-ground">
-                                <button type="button" class="btn btn-outline-dark" id="addCart"><span class="fas fa-shopping-cart"></span> Add To Cart</button>
+                                <button type="button" class="btn btn-outline-dark" id="addCart"><span
+                                        class="fas fa-shopping-cart"></span> Add To Cart</button>
                             </div>
                         </div>
                     </div>
@@ -273,7 +298,8 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header justify-content-end">
-                    <a href="#" data-dismiss="modal" class="class pull-right"><span class="fas fa-times text-muted"></span></a>
+                    <a href="#" data-dismiss="modal" class="class pull-right"><span
+                            class="fas fa-times text-muted"></span></a>
                 </div>
                 <div class="modal-body p-5">
                     <div class="row">
@@ -282,8 +308,10 @@
                         </div>
                         <div class="col-md-6 product_content">
                             <h4><span>ES LIPSTICK</span></h4>
-                            <p> A lip color that gives the look and finish of just-blotted lipstick, without the blot. Vegan and cruelty free.</p>
-                            <h3 class="cost"><span class="glyphicon glyphicon-usd"></span> $4.99/ea <small class="pre-cost"><span class="glyphicon glyphicon-usd"></span> 10.00</small></h3>
+                            <p> A lip color that gives the look and finish of just-blotted lipstick, without the blot.
+                                Vegan and cruelty free.</p>
+                            <h3 class="cost"><span class="glyphicon glyphicon-usd"></span> $4.99/ea <small
+                                    class="pre-cost"><span class="glyphicon glyphicon-usd"></span> 10.00</small></h3>
                             <div class="row">
                                 <div class="col-md-4 col-sm-6 col-xs-12">
                                     <select class="form-control" name="select">
@@ -307,7 +335,8 @@
                             </div>
                             <div class="space-ten"></div>
                             <div class="btn-ground">
-                                <button type="button" class="btn btn-outline-dark" id="addCart"><span class="fas fa-shopping-cart"></span> Add To Cart</button>
+                                <button type="button" class="btn btn-outline-dark" id="addCart"><span
+                                        class="fas fa-shopping-cart"></span> Add To Cart</button>
                             </div>
                         </div>
                     </div>
@@ -320,7 +349,8 @@
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header justify-content-end">
-                    <a href="#" data-dismiss="modal" class="class pull-right"><span class="fas fa-times text-muted"></span></a>
+                    <a href="#" data-dismiss="modal" class="class pull-right"><span
+                            class="fas fa-times text-muted"></span></a>
                 </div>
                 <div class="modal-body p-5">
                     <div class="row">
@@ -329,8 +359,11 @@
                         </div>
                         <div class="col-md-6 product_content">
                             <h4><span>HONEST BEAUTY FACE OIL</span></h4>
-                            <p>Make dull, dry skin a thing of the past with our lightweight, Organic Facial Oil. A skin care product and moisturizer all in one, this face oil will repair dehydrated skin and won't clog pores.</p>
-                            <h3 class="cost"><span class="glyphicon glyphicon-usd"></span> $12.99 <small class="pre-cost"><span class="glyphicon glyphicon-usd"></span> 20.00</small></h3>
+                            <p>Make dull, dry skin a thing of the past with our lightweight, Organic Facial Oil. A skin
+                                care product and moisturizer all in one, this face oil will repair dehydrated skin and
+                                won't clog pores.</p>
+                            <h3 class="cost"><span class="glyphicon glyphicon-usd"></span> $12.99 <small
+                                    class="pre-cost"><span class="glyphicon glyphicon-usd"></span> 20.00</small></h3>
                             <div class="row">
                                 <div class="col-md-4 col-sm-6 col-xs-12">
                                     <select class="form-control" name="select">
@@ -353,7 +386,8 @@
                             </div>
                             <div class="space-ten"></div>
                             <div class="btn-ground">
-                                <button type="button" class="btn btn-outline-dark" id="addCart"><span class="fas fa-shopping-cart"></span> Add To Cart</button>
+                                <button type="button" class="btn btn-outline-dark" id="addCart"><span
+                                        class="fas fa-shopping-cart"></span> Add To Cart</button>
                             </div>
                         </div>
                     </div>
@@ -392,22 +426,21 @@
                 </div>
             </div>
         </div>
-    </form>
+        </form>
     </footer>
 
     <script>
-    
-// Cache do elemento para evitar constantes ciclos de procura pelo mesmo
-//var $span = $("#cartItems");
+        // Cache do elemento para evitar constantes ciclos de procura pelo mesmo
+        //var $span = $("#cartItems");
 
-// Colocar a 0 ao início
-//$span.val(0);
+        // Colocar a 0 ao início
+        //$span.val(0);
 
-// Aumenta ou diminui o valor sendo 0 o mais baixo possível
-//$(".btn").click(function(){
- //   if ($(this).hasClass('add'))
-//        $span.val(parseInt($span.val())+1);
-//});
+        // Aumenta ou diminui o valor sendo 0 o mais baixo possível
+        //$(".btn").click(function(){
+        //   if ($(this).hasClass('add'))
+        //        $span.val(parseInt($span.val())+1);
+        //});
     </script>
 
     <!-- Optional JavaScript -->
@@ -418,7 +451,6 @@
     </script>
     -->
     <script>
-
         var addItem = document.getElementById('addCart');
         var items = document.getElementById('cartItems');
         var count = parseInt(items.innerHTML);
@@ -426,8 +458,6 @@
             count = parseInt(items.innerHTML);
             items.innerHTML = count + parseInt(quantity.value);
         });
-   
-        
     </script>
 
 
@@ -441,7 +471,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
-        <script src="https://unpkg.com/konva@6.0.0/konva.min.js"></script>
+    <script src="https://unpkg.com/konva@6.0.0/konva.min.js"></script>
 </body>
 
 </html>
