@@ -79,7 +79,7 @@
                     <a class=" nav-link" href="cart.html">
                         <i class="fa fa-shopping-cart" aria-hidden="true">
                         </i>
-                        <span id="cartItem" class="p-0">0</span>
+                        <span class="Add p-0" id="cartItems">0</span>
                     </a>
                 </div>
                 <!--end cart-->
@@ -112,14 +112,15 @@
 
         <!--PRODUCTS-->
         <section>
+            <form>
             <div class="container">
                 <div class="row text-center">
                     <div class="col-md my-sm-1 my-md-0 p-4">
-                        <a href="#product_view1" data-toggle="modal" data-target="#product_view1"><img src="assets/products/product1.jpg" style="width:100%;" alt=""></a>
+                        <a href="product.html" data-toggle="modal"><img src="assets/products/product1.jpg" style="width:100%;" alt=""></a>
                         <h5 class="mt-4">COCOOIL (16oz.)</h5>
                         <h5 class="">Shampoo & Conditioner</h5>
                         <p class="text-info">$12.99</p>
-                        <button type="button" class="btn "><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+                        <button type="button" class="btn add" id="addCart"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
                         <button type="button" class="btn " data-toggle="modal" data-target="#product_view1"><i class="fa fa-search"></i> Quick View</button>
                     </div>
                     <div class="col-md my-sm-1 my-md-0 p-4">
@@ -127,7 +128,7 @@
                         <h5 class="mt-4">ES LIPSTICK</h5>
                         <h5 class="">5 Shades</h5>
                         <p class="text-info">$4.99/ea</p>
-                        <button type="button" class="btn "><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+                        <button type="button" class="btn" id="addCart"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
                         <button type="button" class="btn " data-toggle="modal" data-target="#product_view2"><i class="fa fa-search"></i> Quick View</button>
                     </div>
                     <div class="col-md my-sm-1 my-md-0 p-4">
@@ -135,7 +136,7 @@
                         <h5 class="mt-4">HONEST BEAUTY</h5>
                         <h5 class="">Facial Oil (4oz.)</h5>
                         <p class="text-info">$16.99</p>
-                        <button type="button" class="btn "><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+                        <button type="button" class="btn" id="addCart"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
                         <button type="button" class="btn " data-toggle="modal" data-target="#product_view3"><i class="fa fa-search"></i> Quick View</button>
                     </div>
                     <div class="col-md my-sm-1 my-md-0 p-4 text-center">
@@ -182,7 +183,7 @@
                         <button type="button" class="btn "><i class="fa fa-search"></i> Quick View</button>
                     </div>
                 </div>
-
+            </form>
                 <div class="row text-center">
                     <div class="col-md my-sm-1 my-md-0 p-4">
                         <img src="assets/products/product9.jpg" style="width:100%;" alt="">
@@ -205,15 +206,15 @@
                         <h5 class="mt-4">YOUNG LIVING ESSENTIAL OILS</h5>
                         <h5 class="">5 fragrances</h5>
                         <p class="text-info">$4.99/ea</p>
-                        <button type="button" class="btn "><i class="fa fa-shopping-cart"></i> Add To Cart</button>
-                        <button type="button" class="btn "><i class="fa fa-search"></i> Quick View</button>
+                        <button type="button" class="btn" id="addCart"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+                        <button type="button" class="btn"><i class="fa fa-search"></i> Quick View</button>
                     </div>
                     <div class="col-md my-sm-1 my-md-0 p-4">
                         <img src="assets/products/product12.jpg" style="width:100%;" alt="">
                         <h5 class="mt-4">MARSHOL HAND SANITIZER (16oz.)</h5>
                         <h5 class="">Vitamin Enriched</h5>
                         <p class="text-info">$12.99</p>
-                        <button type="button" class="btn "><i class="fa fa-shopping-cart"></i> Add To Cart</button>
+                        <button type="button" class="btn" id="addCart"><i class="fa fa-shopping-cart"></i> Add To Cart</button>
                         <button type="button" class="btn "><i class="fa fa-search"></i> Quick View</button>
                     </div>
                 </div>
@@ -259,7 +260,7 @@
                             </div>
                             <div class="space-ten"></div>
                             <div class="btn-ground">
-                                <button type="button" class="btn btn-outline-dark"><span class="fas fa-shopping-cart"></span> Add To Cart</button>
+                                <button type="button" class="btn btn-outline-dark" id="addCart"><span class="fas fa-shopping-cart"></span> Add To Cart</button>
                             </div>
                         </div>
                     </div>
@@ -306,7 +307,7 @@
                             </div>
                             <div class="space-ten"></div>
                             <div class="btn-ground">
-                                <button type="button" class="btn btn-outline-dark"><span class="fas fa-shopping-cart"></span> Add To Cart</button>
+                                <button type="button" class="btn btn-outline-dark" id="addCart"><span class="fas fa-shopping-cart"></span> Add To Cart</button>
                             </div>
                         </div>
                     </div>
@@ -352,7 +353,7 @@
                             </div>
                             <div class="space-ten"></div>
                             <div class="btn-ground">
-                                <button type="button" class="btn btn-outline-dark"><span class="fas fa-shopping-cart"></span> Add To Cart</button>
+                                <button type="button" class="btn btn-outline-dark" id="addCart"><span class="fas fa-shopping-cart"></span> Add To Cart</button>
                             </div>
                         </div>
                     </div>
@@ -391,8 +392,45 @@
                 </div>
             </div>
         </div>
+    </form>
     </footer>
+
+    <script>
+    
+// Cache do elemento para evitar constantes ciclos de procura pelo mesmo
+//var $span = $("#cartItems");
+
+// Colocar a 0 ao início
+//$span.val(0);
+
+// Aumenta ou diminui o valor sendo 0 o mais baixo possível
+//$(".btn").click(function(){
+ //   if ($(this).hasClass('add'))
+//        $span.val(parseInt($span.val())+1);
+//});
+    </script>
+
     <!-- Optional JavaScript -->
+    <!--
+    <script>
+        var items = document.getElementById('cartItems');
+        items.innerHTML = 2;
+    </script>
+    -->
+    <script>
+
+        var addItem = document.getElementById('addCart');
+        var items = document.getElementById('cartItems');
+        var count = parseInt(items.innerHTML);
+        addItem.addEventListener("click", function (event) {
+            count = parseInt(items.innerHTML);
+            items.innerHTML = count + parseInt(quantity.value);
+        });
+   
+        
+    </script>
+
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -403,6 +441,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
         integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
     </script>
+        <script src="https://unpkg.com/konva@6.0.0/konva.min.js"></script>
 </body>
 
 </html>
