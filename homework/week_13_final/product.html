@@ -210,15 +210,23 @@
             </div>
             </form>
         </footer>
-        <script>
-            var addItem = document.getElementById('addCart');
-            var items = document.getElementById('cartItems');
-            var count = parseInt(items.innerHTML);
-            addItem.addEventListener("click", function (event) {
-                count = parseInt(items.innerHTML);
-                items.innerHTML = count + parseInt(quantity.value);
-            });
-        </script>
+    <!-- Add to Cart -->
+    <script>
+        var size = document.getElementById("selectSize");
+        var quantity = document.getElementById("selectQuantity")
+
+        var addItem = document.getElementById('addCart');
+        var items = document.getElementById('cartItems');
+        var count = parseInt(items.innerHTML);
+        addItem.addEventListener("click", function (event) {
+            count = parseInt(items.innerHTML);
+            items.innerHTML = count + parseInt(quantity.value);
+        });
+
+
+        
+        
+    </script>
         <!-- jQuery first, then Popper.js, then Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
             integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
